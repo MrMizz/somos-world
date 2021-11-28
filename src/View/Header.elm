@@ -1,7 +1,7 @@
 module View.Header exposing (view)
 
 import Html exposing (Html)
-import Html.Attributes exposing (class)
+import Html.Attributes exposing (class, src, width)
 import Model.State as State exposing (State(..))
 import Msg.Msg exposing (Msg)
 
@@ -9,10 +9,10 @@ import Msg.Msg exposing (Msg)
 view : Html Msg
 view =
     Html.nav
-        [ class "level has-background-white-bis"
+        [ class "level"
         ]
         [ Html.div
-            [ class "level-left"
+            [ class "level-left has-font-1"
             ]
             [ Html.div
                 [ class "level-item"
@@ -27,15 +27,23 @@ view =
                             [ Html.a
                                 [ State.href About
                                 ]
-                                [ Html.text "About"
+                                [ Html.text "ABOUT"
                                 ]
                             ]
                         , Html.li
                             []
                             [ Html.a
-                                [ State.href LandingPage
+                                [ State.href Releases
                                 ]
-                                [ Html.text "Landing"
+                                [ Html.text "RELEASES"
+                                ]
+                            ]
+                        , Html.li
+                            []
+                            [ Html.a
+                                [ State.href Links
+                                ]
+                                [ Html.text "LINKS"
                                 ]
                             ]
                         ]
@@ -48,10 +56,14 @@ view =
             [ Html.div
                 [ class "level-item"
                 ]
-                [ Html.div
-                    [ class "title is-family-secondary is-3 px-2 pb-2"
+                [ Html.a
+                    [ State.href Links
                     ]
-                    [ Html.text "Responsive Elm"
+                    [ Html.img
+                        [ src "images/02_somos.png"
+                        , width 150
+                        ]
+                        []
                     ]
                 ]
             ]

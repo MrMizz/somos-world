@@ -11,7 +11,8 @@ import Sub.Sub as Sub
 import Url
 import View.About.About
 import View.Error.Error
-import View.LandingPage.LandingPage
+import View.Links.Links
+import View.Releases.Releases
 
 
 main : Program () Model Msg
@@ -62,11 +63,14 @@ view model =
     let
         html =
             case model.state of
-                LandingPage ->
-                    View.LandingPage.LandingPage.view
+                Releases ->
+                    View.Releases.Releases.view
 
                 About ->
                     View.About.About.view
+
+                Links ->
+                    View.Links.Links.view
 
                 Error error ->
                     View.Error.Error.view error

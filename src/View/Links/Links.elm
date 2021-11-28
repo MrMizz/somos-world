@@ -1,4 +1,4 @@
-module View.LandingPage.LandingPage exposing (view)
+module View.Links.Links exposing (view)
 
 import Html exposing (Html)
 import Html.Attributes exposing (class)
@@ -19,6 +19,6 @@ body =
         [ Html.div
             [ class "has-text-centered"
             ]
-            [ Html.text "Landing Page . . . "
+            [ Html.text "LINKS . . . "
             ]
         ]

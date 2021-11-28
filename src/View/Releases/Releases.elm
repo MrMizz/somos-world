@@ -1,4 +1,4 @@
-module View.About.About exposing (view)
+module View.Releases.Releases exposing (view)
 
 import Html exposing (Html)
 import Html.Attributes exposing (class)
@@ -19,6 +19,6 @@ body =
         [ Html.div
             [ class "has-text-centered"
             ]
-            [ Html.text "ABOUT . . . "
+            [ Html.text "RELEASES . . . "
             ]
         ]
