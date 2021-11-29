@@ -17,7 +17,8 @@ body error =
         [ class "container"
         ]
         [ Html.div
-            []
+            [ class "has-font-1"
+            ]
             [ Html.text error
             ]
         ]

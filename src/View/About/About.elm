@@ -17,7 +17,7 @@ body =
         [ class "container"
         ]
         [ Html.div
-            [ class "has-text-centered"
+            [ class "has-text-centered has-font-1"
             ]
             [ Html.text "ABOUT . . . "
             ]

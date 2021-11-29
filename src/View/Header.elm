@@ -9,7 +9,7 @@ import Msg.Msg exposing (Msg)
 view : Html Msg
 view =
     Html.nav
-        [ class "level"
+        [ class "level is-mobile"
         ]
         [ Html.div
             [ class "level-left has-font-1"
@@ -18,7 +18,7 @@ view =
                 [ class "level-item"
                 ]
                 [ Html.div
-                    [ class "tabs is-boxed is-large has-border-1"
+                    [ class "tabs is-boxed is-small has-border-1"
                     ]
                     [ Html.ul
                         []
@@ -61,7 +61,7 @@ view =
                     ]
                     [ Html.img
                         [ src "images/02_somos.png"
-                        , width 150
+                        , width 50
                         ]
                         []
                     ]

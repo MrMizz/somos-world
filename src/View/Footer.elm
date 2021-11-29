@@ -18,10 +18,10 @@ view =
                 , target "_blank"
                 ]
                 [ Html.span
-                    [ class "icon is-large"
+                    [ class "icon is-medium"
                     ]
                     [ Html.i
-                        [ class "fab fa-lg fa-instagram"
+                        [ class "fab fa-sm fa-instagram"
                         ]
                         []
                     ]
@@ -35,10 +35,10 @@ view =
                 , target "_blank"
                 ]
                 [ Html.span
-                    [ class "icon is-large"
+                    [ class "icon is-medium"
                     ]
                     [ Html.i
-                        [ class "fab fa-lg fa-github"
+                        [ class "fab fa-sm fa-github"
                         ]
                         []
                     ]
@@ -48,12 +48,12 @@ view =
             [ class "level-item"
             ]
             [ Html.a
-                [ class "icon is-large"
+                [ class "icon is-medium"
                 , href "mailto:bigtimetapin@gmail.com"
                 , target "_blank"
                 ]
                 [ Html.i
-                    [ class "far fa-lg fa-envelope"
+                    [ class "far fa-sm fa-envelope"
                     ]
                     []
                 ]
