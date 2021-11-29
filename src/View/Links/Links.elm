@@ -53,7 +53,7 @@ body =
                     ]
                     [ Html.span
                         []
-                        [ Html.text "APPLE_MUSIC"
+                        [ Html.text "APPLE_MUSIC_"
                         ]
                     , Html.span
                         [ class "icon"
