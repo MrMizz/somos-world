@@ -75,7 +75,7 @@ view model =
                 Error error ->
                     View.Error.Error.view error
     in
-    { title = "Responsive Elm"
+    { title = "SOMOS *"
     , body =
         [ html
         ]
