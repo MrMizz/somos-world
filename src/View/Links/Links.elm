@@ -38,36 +38,38 @@ body =
             }
         ]
 
+
 type alias Args =
-    { title: String
-    , url: String
-    , font: String
+    { title : String
+    , url : String
+    , font : String
     }
 
-link: Args -> Html Msg
+
+link : Args -> Html Msg
 link args =
-        Html.div
-            [ style "padding-bottom" "50px"
+    Html.div
+        [ style "padding-bottom" "50px"
+        ]
+        [ Html.a
+            [ href args.url
+            , target "_blank"
             ]
-            [ Html.a
-                [ href args.url
-                , target "_blank"
+            [ Html.span
+                [ class "icon-text"
                 ]
                 [ Html.span
-                    [ class "icon-text"
+                    []
+                    [ Html.text args.title
                     ]
-                    [ Html.span
+                , Html.span
+                    [ class "icon"
+                    ]
+                    [ Html.i
+                        [ class args.font
+                        ]
                         []
-                        [ Html.text args.title
-                        ]
-                    , Html.span
-                        [ class "icon"
-                        ]
-                        [ Html.i
-                            [ class args.font
-                            ]
-                            []
-                        ]
                     ]
                 ]
             ]
+        ]
