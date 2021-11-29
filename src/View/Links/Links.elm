@@ -31,6 +31,11 @@ body =
             , url = "https://www.youtube.com/channel/UCaAHeEOtcuOP_s9K8YKgTDw"
             , font = "fab fa-sm fa-youtube"
             }
+        , link
+            { title = "INSTAGRAM_"
+            , url = "https://www.instagram.com/somos.ep/"
+            , font = "fab fa-sm fa-instagram"
+            }
         ]
 
 type alias Args =
