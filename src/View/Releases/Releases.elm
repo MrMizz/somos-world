@@ -1,7 +1,7 @@
 module View.Releases.Releases exposing (view)
 
 import Html exposing (Html)
-import Html.Attributes exposing (class, href, target)
+import Html.Attributes exposing (class, height, href, src, target, width)
 import Msg.Msg exposing (Msg)
 import View.Hero
 
@@ -33,7 +33,7 @@ body =
                 [ Html.text "SELECT PLATFORM"
                 ]
             , Html.div
-                [ class "field is-grouped"
+                [ class "field is-grouped has-space-bottom-1"
                 ]
                 [ link
                     { title = "SPOTIFY_"
@@ -48,6 +48,16 @@ body =
                     , url = "https://www.youtube.com/playlist?list=PLRe_JtAR_iVWIXOmHEMxZh6AZt_4cGDvV"
                     }
                 ]
+            , Html.img
+                [ class "is-image-1"
+                , src "images/ep/03.jpg"
+                ]
+                []
+            , Html.img
+                [ class "is-image-1"
+                , src "images/ep/02.jpg"
+                ]
+                []
             ]
         ]
 

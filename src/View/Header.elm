@@ -60,7 +60,7 @@ view =
                     [ State.href Links
                     ]
                     [ Html.img
-                        [ src "images/02_somos.png"
+                        [ src "images/logo/02_somos.png"
                         , width 50
                         ]
                         []
