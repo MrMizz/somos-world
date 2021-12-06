@@ -5,12 +5,14 @@ module Main exposing (main)
 import Browser
 import Browser.Navigation as Nav
 import Model.Model as Model exposing (Model)
+import Model.Project exposing (Project(..))
 import Model.State as State exposing (State(..))
 import Msg.Msg exposing (Msg(..), resetViewport)
 import Sub.Sub as Sub
 import Url
 import View.About.About
 import View.Error.Error
+import View.Gallery.EP01
 import View.Links.Links
 import View.Releases.Releases
 
@@ -71,6 +73,14 @@ view model =
 
                 Links ->
                     View.Links.Links.view
+
+                Gallery project ->
+                    case project of
+                        EP01 ->
+                            View.Gallery.EP01.view
+
+                        LP01 ->
+                            View.Error.Error.view "DNE"
 
                 Error error ->
                     View.Error.Error.view error

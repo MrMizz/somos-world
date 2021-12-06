@@ -44,7 +44,7 @@ a:link, a:visited {
 
 .has-font-2 {
   font-family: Imbue, sans-serif;
-  font-size: 2em;
+  font-size: small;
 }
 
 .has-opacity {
@@ -122,22 +122,30 @@ a:link, a:visited {
   border-color: #FDF9EF;
   color: #FDF9EF;
   padding: 7px 16px;
-  text-align: center;;
+  text-align: center;
   border-radius: 4px;
   transition-duration: 0.10s;
 }
 
-.is-button-1:hover {
+.is-button-2 {
+  background-color: #241F20;
+  border: 1px dotted #4a4a4a;
+  color: #FDF9EF;
+  height: 30px;
+  letter-spacing: 10px;
+  text-align: center;
+}
+
+.is-button-1:hover, .is-button-2:hover {
   background-color: #FDF9EF;
   color: #241F20;
 }
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // images /////////////////////////////////////////////////////////////////////////////////////////////////////////////
-.is-image-1 {
-  margin-bottom: 20px;
-  margin-right: 20px;
-  float: left;
+.is-image-1, .is-image-2 {
+  margin-bottom: 5px;
+  margin-right: 5px;
   box-shadow: 1px 1px 5px grey;
 }
 
@@ -158,11 +166,20 @@ $navbar-height: 4.00rem;
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 .is-image-1 {
   @include until($tablet) {
-    width: 152px;
+    width: 160px;
     height: 238px;
   }
   @include from($tablet) {
     width: 225px;
     height: 350px;
+  }
+}
+
+.is-button-2 {
+  @include until($tablet) {
+    width: 325px;
+  }
+  @include from($tablet) {
+    width: 455px;
   }
 }

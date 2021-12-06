@@ -1,7 +1,9 @@
 module View.Releases.Releases exposing (view)
 
 import Html exposing (Html)
-import Html.Attributes exposing (class, height, href, src, target, width)
+import Html.Attributes exposing (class, href, src, style, target)
+import Model.Project exposing (Project(..))
+import Model.State as State exposing (State(..))
 import Msg.Msg exposing (Msg)
 import View.Hero
 
@@ -16,48 +18,58 @@ body =
     Html.div
         [ class "container has-font-1"
         ]
-        [ Html.div
+        [ Html.h1
+            [ class "has-space-bottom-1"
+            ]
+            [ Html.text "CDMX_EP / 2021"
+            ]
+        , Html.h2
             []
-            [ Html.h1
-                [ class "has-space-bottom-1"
+            [ Html.text "STREAMING"
+            ]
+        , Html.p
+            [ class "has-font-1 has-opacity has-space-bottom-1"
+            ]
+            [ Html.text "SELECT PLATFORM"
+            ]
+        , Html.div
+            [ class "field is-grouped has-space-bottom-1"
+            ]
+            [ link
+                { title = "SPOTIFY_"
+                , url = "https://open.spotify.com/album/4CHnYuYVVExMpsLqfRSekQ?si=k1gNFn77QHSWJh0Vg9kaLA"
+                }
+            , link
+                { title = "APPLE_MUSIC_"
+                , url = "https://music.apple.com/us/album/day-02-feat-cassowary-marv-ali-single/1592228064"
+                }
+            , link
+                { title = "YOUTUBE_"
+                , url = "https://www.youtube.com/playlist?list=PLRe_JtAR_iVWIXOmHEMxZh6AZt_4cGDvV"
+                }
+            ]
+        , Html.img
+            [ class "is-image-1"
+            , style "float" "left"
+            , src "images/ep/03.jpg"
+            ]
+            []
+        , Html.img
+            [ class "is-image-1"
+            , src "images/ep/02.jpg"
+            ]
+            []
+        , Html.div
+            []
+            [ Html.a
+                [ State.href (Gallery EP01)
                 ]
-                [ Html.text "CDMX_EP / 2021"
+                [ Html.button
+                    [ class "is-button-2"
+                    ]
+                    [ Html.text "📸 📸 📸"
+                    ]
                 ]
-            , Html.h2
-                []
-                [ Html.text "STREAMING"
-                ]
-            , Html.p
-                [ class "has-font-1 has-opacity has-space-bottom-1"
-                ]
-                [ Html.text "SELECT PLATFORM"
-                ]
-            , Html.div
-                [ class "field is-grouped has-space-bottom-1"
-                ]
-                [ link
-                    { title = "SPOTIFY_"
-                    , url = "https://open.spotify.com/album/4CHnYuYVVExMpsLqfRSekQ?si=k1gNFn77QHSWJh0Vg9kaLA"
-                    }
-                , link
-                    { title = "APPLE_MUSIC_"
-                    , url = "https://music.apple.com/us/album/day-02-feat-cassowary-marv-ali-single/1592228064"
-                    }
-                , link
-                    { title = "YOUTUBE_"
-                    , url = "https://www.youtube.com/playlist?list=PLRe_JtAR_iVWIXOmHEMxZh6AZt_4cGDvV"
-                    }
-                ]
-            , Html.img
-                [ class "is-image-1"
-                , src "images/ep/03.jpg"
-                ]
-                []
-            , Html.img
-                [ class "is-image-1"
-                , src "images/ep/02.jpg"
-                ]
-                []
             ]
         ]
 
