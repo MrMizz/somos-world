@@ -15,7 +15,6 @@ type State
     | Error String
 
 
-
 urlParser : UrlParser.Parser (State -> c) c
 urlParser =
     UrlParser.oneOf
@@ -23,11 +22,12 @@ urlParser =
         , UrlParser.map Releases (UrlParser.s "releases")
         , UrlParser.map About (UrlParser.s "about")
         , UrlParser.map Links (UrlParser.s "links")
-        , UrlParser.map Gallery
-            <| UrlParser.oneOf
+        , UrlParser.map Gallery <|
+            UrlParser.oneOf
                 [ UrlParser.map EP01 (UrlParser.s "gallery-cdmx-ep")
                 ]
         ]
+
 
 parse : Url.Url -> State
 parse url =
@@ -62,7 +62,7 @@ path state =
             "#/invalid"
 
         Gallery project ->
-            "#/gallery-" ++ (Project.toString project)
+            "#/gallery-" ++ Project.toString project
 
 
 href : State -> Html.Attribute msg

@@ -75,12 +75,12 @@ body =
 
 
 type alias Args =
-    { title: String
-    , url: String
+    { title : String
+    , url : String
     }
 
 
-link: Args -> Html Msg
+link : Args -> Html Msg
 link args =
     Html.p
         [ class "control"

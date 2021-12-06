@@ -10,7 +10,8 @@ view : Html Msg
 view =
     View.Hero.view body
 
-body: Html Msg
+
+body : Html Msg
 body =
     Html.div
         [ class "columns is-mobile is-multiline"
@@ -33,7 +34,7 @@ body =
         ]
 
 
-column: String -> Html Msg
+column : String -> Html Msg
 column index =
     Html.div
         [ class "column is-4"
