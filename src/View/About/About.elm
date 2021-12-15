@@ -1,7 +1,7 @@
 module View.About.About exposing (view)
 
 import Html exposing (Html)
-import Html.Attributes exposing (class)
+import Html.Attributes exposing (class, href, target)
 import Msg.Msg exposing (Msg)
 import View.Hero
 
@@ -16,9 +16,36 @@ body =
     Html.div
         [ class "container"
         ]
-        [ Html.div
-            [ class "has-text-centered has-font-1"
+        [ Html.p
+            [ class "has-font-1"
             ]
-            [ Html.text "ABOUT . . . "
+            [ Html.span
+                []
+                [ Html.text "SOMOS *"
+                ]
+            ]
+        , Html.p
+            [ class "has-font-1 has-opacity"
+            ]
+            [ Html.span
+                [
+                ]
+                [ Html.text "[we are] [anything]"
+                ]
+            ]
+        , Html.p
+            [ class "has-font-1 has-opacity"
+            ]
+            [ Html.span
+                []
+                [ Html.text "[we are] "
+                ]
+            , Html.a
+                [ class "has-sky-blue-text"
+                , href "https://en.wikipedia.org/wiki/Wildcard_character"
+                , target "_blank"
+                ]
+                [ Html.text " [wildcard]"
+                ]
             ]
         ]
