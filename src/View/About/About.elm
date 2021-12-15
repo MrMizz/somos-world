@@ -34,7 +34,7 @@ body =
                 ]
             ]
         , Html.p
-            [ class "has-font-1 has-opacity"
+            [ class "has-font-1 has-opacity has-space-bottom-1"
             ]
             [ Html.span
                 []
@@ -46,6 +46,24 @@ body =
                 , target "_blank"
                 ]
                 [ Html.text " [wildcard]"
+                ]
+            ]
+        , Html.p
+            [ class "has-font-1 has-opacity"
+            ]
+            [ Html.div
+                []
+                [ Html.text
+                    """
+                    Collaborative effort of Musicians, Producers, Designers, and Software Developers
+                    """
+                ]
+            , Html.div
+                []
+                [ Html.text
+                    """
+                    Currently based in São Paulo, Brasil with roots in Los Angeles, CA
+                    """
                 ]
             ]
         ]
