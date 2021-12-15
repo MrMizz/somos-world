@@ -10,6 +10,7 @@ view : Html Msg
 view =
     View.Hero.view body
 
+
 body : Html Msg
 body =
     Html.div

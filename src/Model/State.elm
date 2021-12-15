@@ -23,8 +23,8 @@ urlParser =
         , UrlParser.map Releases (UrlParser.s "releases")
         , UrlParser.map About (UrlParser.s "about")
         , UrlParser.map Links (UrlParser.s "links")
-        , UrlParser.map (Gallery EP01) (UrlParser.s "gallery") </> (UrlParser.s (Project.toString EP01))
-        , UrlParser.map (Description EP01) (UrlParser.s "description") </> (UrlParser.s (Project.toString EP01))
+        , UrlParser.map (Gallery EP01) (UrlParser.s "gallery") </> UrlParser.s (Project.toString EP01)
+        , UrlParser.map (Description EP01) (UrlParser.s "description") </> UrlParser.s (Project.toString EP01)
         ]
 
 
