@@ -119,23 +119,16 @@ a:link, a:visited {
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // buttons /////////////////////////////////////////////////////////////////////////////////////////////////////////////
-.is-button-1 {
-  background-color: #241F20;
-  border-color: #FDF9EF;
-  color: #FDF9EF;
-  padding: 7px 16px;
-  text-align: center;
-  border-radius: 4px;
-  transition-duration: 0.10s;
-}
-
-.is-button-2 {
+.is-button-1, .is-button-2 {
   background-color: #241F20;
   border: 1px dotted #4a4a4a;
   color: #FDF9EF;
   height: 30px;
-  letter-spacing: 10px;
   text-align: center;
+}
+
+.is-button-2 {
+  letter-spacing: 10px;
 }
 
 .is-button-1:hover, .is-button-2:hover {
