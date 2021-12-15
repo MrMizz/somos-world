@@ -12,6 +12,7 @@ type State
     | About
     | Links
     | Gallery Project
+    | Description Project
     | Error String
 
 
@@ -23,6 +24,7 @@ urlParser =
         , UrlParser.map About (UrlParser.s "about")
         , UrlParser.map Links (UrlParser.s "links")
         , UrlParser.map (Gallery EP01) (UrlParser.s "gallery") </> (UrlParser.s (Project.toString EP01))
+        , UrlParser.map (Description EP01) (UrlParser.s "description") </> (UrlParser.s (Project.toString EP01))
         ]
 
 
@@ -55,11 +57,14 @@ path state =
         Links ->
             "#/links"
 
-        Error _ ->
-            "#/invalid"
-
         Gallery project ->
             "#/gallery/" ++ Project.toString project
+
+        Description project ->
+            "#/description/" ++ Project.toString project
+
+        Error _ ->
+            "#/invalid"
 
 
 href : State -> Html.Attribute msg

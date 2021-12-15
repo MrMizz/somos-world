@@ -11,6 +11,7 @@ import Msg.Msg exposing (Msg(..), resetViewport)
 import Sub.Sub as Sub
 import Url
 import View.About.About
+import View.Description.EP01
 import View.Error.Error
 import View.Gallery.EP01
 import View.Links.Links
@@ -78,6 +79,14 @@ view model =
                     case project of
                         EP01 ->
                             View.Gallery.EP01.view
+
+                        LP01 ->
+                            View.Error.Error.view "DNE"
+
+                Description project ->
+                    case project of
+                        EP01 ->
+                            View.Description.EP01.view
 
                         LP01 ->
                             View.Error.Error.view "DNE"

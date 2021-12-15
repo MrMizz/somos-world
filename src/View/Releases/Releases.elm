@@ -1,7 +1,7 @@
 module View.Releases.Releases exposing (view)
 
 import Html exposing (Html)
-import Html.Attributes exposing (class, href, src, style, target)
+import Html.Attributes exposing (class, href, target)
 import Model.Project exposing (Project(..))
 import Model.State as State exposing (State(..))
 import Msg.Msg exposing (Msg)
@@ -83,6 +83,15 @@ body =
                     [ class "is-button-2"
                     ]
                     [ Html.text "📸 📸 📸"
+                    ]
+                ]
+            , Html.a
+                [ State.href (Description EP01)
+                ]
+                [ Html.button
+                    [ class "is-button-2"
+                    ]
+                    [ Html.text "✍️ ✍️ ✍️️"
                     ]
                 ]
             ]
