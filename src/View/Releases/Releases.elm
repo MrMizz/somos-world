@@ -94,7 +94,7 @@ body =
                 [ Html.button
                     [ class "is-button-2"
                     ]
-                    [ Html.text "✍️ ✍️ ✍️️"
+                    [ Html.text "✏️ ✏️ ✏️"
                     ]
                 ]
             ]
