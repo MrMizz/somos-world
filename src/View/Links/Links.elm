@@ -17,6 +17,11 @@ body =
         [ class "container has-text-centered has-font-1 has-border-2"
         ]
         [ link
+            { title = "BANDCAMP_"
+            , url = "https://somos-ep.bandcamp.com"
+            , font = "fab fa-sm fa-bandcamp"
+            }
+        , link
             { title = "SPOTIFY_"
             , url = "https://open.spotify.com/artist/7taoh5iJntcYRipZKu4yAp?si=vuSsT_g4S3mKWeFeY7KZiw"
             , font = "fab fa-sm fa-spotify"

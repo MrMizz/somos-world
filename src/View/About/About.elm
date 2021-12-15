@@ -33,7 +33,7 @@ body =
                 ]
             ]
         , Html.p
-            [ class "has-font-1 has-opacity has-space-bottom-1"
+            [ class "has-font-1 has-opacity has-space-bottom-2"
             ]
             [ Html.span
                 []

@@ -19,21 +19,38 @@ body =
         [ class "container has-font-1"
         ]
         [ Html.h1
-            [ class "has-space-bottom-1"
+            [ class "has-space-bottom-2"
             ]
             [ Html.text "CDMX_EP / 2021"
+            ]
+        , Html.h2
+            []
+            [ Html.text "PURCHASE"
+            ]
+        , Html.p
+            [ class "has-opacity has-space-bottom-1"
+            ]
+            [ Html.text ".WAV FILES FOR DOWNLOAD"
+            ]
+        , Html.div
+            [ class "has-space-bottom-2"
+            ]
+            [ link
+                { title = "BANDCAMP_"
+                , url = "https://somos-ep.bandcamp.com"
+                }
             ]
         , Html.h2
             []
             [ Html.text "STREAMING"
             ]
         , Html.p
-            [ class "has-font-1 has-opacity has-space-bottom-1"
+            [ class "has-opacity has-space-bottom-1"
             ]
             [ Html.text "SELECT PLATFORM"
             ]
         , Html.div
-            [ class "field is-grouped has-space-bottom-1"
+            [ class "field is-grouped has-space-bottom-2"
             ]
             [ link
                 { title = "SPOTIFY_"
@@ -48,17 +65,15 @@ body =
                 , url = "https://www.youtube.com/playlist?list=PLRe_JtAR_iVWIXOmHEMxZh6AZt_4cGDvV"
                 }
             ]
-        , Html.img
-            [ class "is-image-1"
-            , style "float" "left"
-            , src "images/ep/03.jpg"
-            ]
+        , Html.h2
             []
-        , Html.img
-            [ class "is-image-1"
-            , src "images/ep/02.jpg"
+            [ Html.text "ET CETERA"
             ]
-            []
+        , Html.p
+            [ class "has-opacity has-space-bottom-1"
+            ]
+            [ Html.text "PHOTOS, TEXT, ..."
+            ]
         , Html.div
             []
             [ Html.a
