@@ -4,7 +4,7 @@ import Html
 import Html.Attributes
 import Model.Project as Project exposing (Project(..))
 import Url
-import Url.Parser as UrlParser
+import Url.Parser as UrlParser exposing ((</>))
 
 
 type State
@@ -22,10 +22,7 @@ urlParser =
         , UrlParser.map Releases (UrlParser.s "releases")
         , UrlParser.map About (UrlParser.s "about")
         , UrlParser.map Links (UrlParser.s "links")
-        , UrlParser.map Gallery <|
-            UrlParser.oneOf
-                [ UrlParser.map EP01 (UrlParser.s "gallery-cdmx-ep")
-                ]
+        , UrlParser.map (Gallery EP01) (UrlParser.s "gallery") </> (UrlParser.s (Project.toString EP01))
         ]
 
 
@@ -62,7 +59,7 @@ path state =
             "#/invalid"
 
         Gallery project ->
-            "#/gallery-" ++ Project.toString project
+            "#/gallery/" ++ Project.toString project
 
 
 href : State -> Html.Attribute msg
