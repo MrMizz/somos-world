@@ -28,8 +28,7 @@ body =
             [ class "has-font-1 has-opacity"
             ]
             [ Html.span
-                [
-                ]
+                []
                 [ Html.text "[we are] [anything]"
                 ]
             ]
