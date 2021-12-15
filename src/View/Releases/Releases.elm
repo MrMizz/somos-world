@@ -54,11 +54,11 @@ body =
             ]
             [ link
                 { title = "SPOTIFY_"
-                , url = "https://open.spotify.com/album/4CHnYuYVVExMpsLqfRSekQ?si=k1gNFn77QHSWJh0Vg9kaLA"
+                , url = "https://open.spotify.com/album/5dn6SJAGYm2hZFzwh8m5b6?si=Ls6fQ_UMS7C2zIO3njiAJw"
                 }
             , link
                 { title = "APPLE_MUSIC_"
-                , url = "https://music.apple.com/us/album/day-02-feat-cassowary-marv-ali-single/1592228064"
+                , url = "https://music.apple.com/us/album/cdmx-ep/1596613937"
                 }
             , link
                 { title = "YOUTUBE_"
