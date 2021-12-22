@@ -54,7 +54,7 @@ body =
                 []
                 [ Html.text
                     """
-                    Collaborative effort of Musicians, Producers, Designers, and Software Developers
+                    Collaborative effort of Musicians, Producers, Designers, and Web3 Developers
                     """
                 ]
             , Html.div
