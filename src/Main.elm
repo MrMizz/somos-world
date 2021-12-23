@@ -106,7 +106,6 @@ view model =
                         Total ->
                             View.Roadmap.Total.view
 
-
                 Error error ->
                     View.Error.Error.view error
     in

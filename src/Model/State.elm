@@ -76,7 +76,6 @@ path state =
                 _ ->
                     "#/roadmap/" ++ Lob.toString lob
 
-
         Error _ ->
             "#/invalid"
 
