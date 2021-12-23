@@ -44,8 +44,7 @@ body =
                     , { body = "MASTER" }
                     ]
                 , doing =
-                    [
-                    ]
+                    []
                 , done =
                     [ { body = "COMPOSITION" }
                     , { body = "PRODUCTION" }
@@ -66,7 +65,7 @@ body =
                     ]
                 , done =
                     [ { body = "PARTY" }
-                    ,  { body = "RECORDING" }
+                    , { body = "RECORDING" }
                     ]
                 }
             ]
