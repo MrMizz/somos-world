@@ -2,6 +2,7 @@ module View.Roadmap.Music exposing (view)
 
 import Html exposing (Html)
 import Html.Attributes exposing (class)
+import Model.State as State exposing (State(..))
 import Msg.Msg exposing (Msg)
 import View.Hero
 import View.Roadmap.Generic as Generic
@@ -29,7 +30,14 @@ body =
                     [ { body = Html.text "MUSIC VIDEO 01" }
                     ]
                 , done =
-                    [ { body = Html.text "RELEASE" }
+                    [ { body =
+                            Html.a
+                                [ class "has-sky-blue-text"
+                                , State.href Releases
+                                ]
+                                [ Html.text "RELEASE"
+                                ]
+                      }
                     ]
                 }
             ]
