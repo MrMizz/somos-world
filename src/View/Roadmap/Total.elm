@@ -16,26 +16,32 @@ view =
 body : Html Msg
 body =
     Html.div
-        [ class "columns is-mobile is-multiline"
+        [ class "columns is-mobile is-multiline has-font-1"
         ]
         [ Html.div
             [ class "column is-12"
             ]
             [ Html.a
-                [ class "is-button-2"
-                , State.href (Roadmap Music)
+                [ State.href (Roadmap Music)
                 ]
-                [ Html.text "MUSIC"
+                [ Html.button
+                    [ class "is-button-2"
+                    ]
+                    [ Html.text "MUSIC"
+                    ]
                 ]
             ]
         , Html.div
             [ class "column is-12"
             ]
             [ Html.a
-                [ class "is-button-2"
-                , State.href (Roadmap Tech)
+                [ State.href (Roadmap Tech)
                 ]
-                [ Html.text "TECH"
+                [ Html.button
+                    [ class "is-button-2"
+                    ]
+                    [ Html.text "TECH"
+                    ]
                 ]
             ]
         ]
