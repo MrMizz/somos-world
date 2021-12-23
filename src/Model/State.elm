@@ -2,6 +2,7 @@ module Model.State exposing (State(..), href, parse)
 
 import Html
 import Html.Attributes
+import Model.Lob as Lob exposing (Lob(..))
 import Model.Project as Project exposing (Project(..))
 import Url
 import Url.Parser as UrlParser exposing ((</>))
@@ -13,6 +14,7 @@ type State
     | Links
     | Gallery Project
     | Description Project
+    | Roadmap Lob
     | Error String
 
 
@@ -23,6 +25,9 @@ urlParser =
         , UrlParser.map Releases (UrlParser.s "releases")
         , UrlParser.map About (UrlParser.s "about")
         , UrlParser.map Links (UrlParser.s "links")
+        , UrlParser.map (Roadmap Total) (UrlParser.s "roadmap")
+        , UrlParser.map (Roadmap Music) (UrlParser.s "roadmap") </> UrlParser.s (Lob.toString Music)
+        , UrlParser.map (Roadmap Tech) (UrlParser.s "roadmap") </> UrlParser.s (Lob.toString Tech)
         , UrlParser.map (Gallery EP01) (UrlParser.s "gallery") </> UrlParser.s (Project.toString EP01)
         , UrlParser.map (Description EP01) (UrlParser.s "description") </> UrlParser.s (Project.toString EP01)
         ]
@@ -62,6 +67,15 @@ path state =
 
         Description project ->
             "#/description/" ++ Project.toString project
+
+        Roadmap lob ->
+            case lob of
+                Total ->
+                    "#/roadmap"
+
+                _ ->
+                    "#/roadmap/" ++ Lob.toString lob
+
 
         Error _ ->
             "#/invalid"

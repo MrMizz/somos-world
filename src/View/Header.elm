@@ -2,6 +2,7 @@ module View.Header exposing (view)
 
 import Html exposing (Html)
 import Html.Attributes exposing (class, src, width)
+import Model.Lob exposing (Lob(..))
 import Model.State as State exposing (State(..))
 import Msg.Msg exposing (Msg)
 
@@ -44,6 +45,14 @@ view =
                                 [ State.href Links
                                 ]
                                 [ Html.text "LINKS"
+                                ]
+                            ]
+                        , Html.li
+                            []
+                            [ Html.a
+                                [ State.href (Roadmap Total)
+                                ]
+                                [ Html.text "ROADMAP"
                                 ]
                             ]
                         ]

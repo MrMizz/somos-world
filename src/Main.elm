@@ -4,6 +4,7 @@ module Main exposing (main)
 
 import Browser
 import Browser.Navigation as Nav
+import Model.Lob exposing (Lob(..))
 import Model.Model as Model exposing (Model)
 import Model.Project exposing (Project(..))
 import Model.State as State exposing (State(..))
@@ -16,6 +17,9 @@ import View.Error.Error
 import View.Gallery.EP01
 import View.Links.Links
 import View.Releases.Releases
+import View.Roadmap.Music
+import View.Roadmap.Tech
+import View.Roadmap.Total
 
 
 main : Program () Model Msg
@@ -90,6 +94,18 @@ view model =
 
                         LP01 ->
                             View.Error.Error.view "DNE"
+
+                Roadmap lob ->
+                    case lob of
+                        Music ->
+                            View.Roadmap.Music.view
+
+                        Tech ->
+                            View.Roadmap.Tech.view
+
+                        Total ->
+                            View.Roadmap.Total.view
+
 
                 Error error ->
                     View.Error.Error.view error
