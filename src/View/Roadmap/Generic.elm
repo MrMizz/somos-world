@@ -55,5 +55,5 @@ li arg =
     Html.div
         [ class "has-border-3 has-font-1 has-opacity"
         ]
-        [ Html.text arg.body
+        [ arg.body
         ]

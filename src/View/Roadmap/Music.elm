@@ -23,13 +23,13 @@ body =
             [ Generic.view
                 { title = "CDMX EP"
                 , todo =
-                    [ { body = "MUSIC VIDEO 02" }
+                    [ { body = Html.text "MUSIC VIDEO 02" }
                     ]
                 , doing =
-                    [ { body = "MUSIC VIDEO 01" }
+                    [ { body = Html.text "MUSIC VIDEO 01" }
                     ]
                 , done =
-                    [ { body = "RELEASE" }
+                    [ { body = Html.text "RELEASE" }
                     ]
                 }
             ]
@@ -39,16 +39,16 @@ body =
             [ Generic.view
                 { title = "SP LP"
                 , todo =
-                    [ { body = "POST-PRODUCTION" }
-                    , { body = "MIX" }
-                    , { body = "MASTER" }
+                    [ { body = Html.text "POST-PRODUCTION" }
+                    , { body = Html.text "MIX" }
+                    , { body = Html.text "MASTER" }
                     ]
                 , doing =
                     []
                 , done =
-                    [ { body = "COMPOSITION" }
-                    , { body = "PRODUCTION" }
-                    , { body = "RECORDING" }
+                    [ { body = Html.text "COMPOSITION" }
+                    , { body = Html.text "PRODUCTION" }
+                    , { body = Html.text "RECORDING" }
                     ]
                 }
             ]
@@ -57,16 +57,16 @@ body =
             [ Generic.view
                 { title = "CASA BOLA"
                 , todo =
-                    [ { body = "MASTER" }
-                    , { body = "MUSIC VIDEO 01" }
-                    , { body = "MUSIC VIDEO 02" }
+                    [ { body = Html.text "MASTER" }
+                    , { body = Html.text "MUSIC VIDEO 01" }
+                    , { body = Html.text "MUSIC VIDEO 02" }
                     ]
                 , doing =
-                    [ { body = "MIX" }
+                    [ { body = Html.text "MIX" }
                     ]
                 , done =
-                    [ { body = "PARTY" }
-                    , { body = "RECORDING" }
+                    [ { body = Html.text "PARTY" }
+                    , { body = Html.text "RECORDING" }
                     ]
                 }
             ]

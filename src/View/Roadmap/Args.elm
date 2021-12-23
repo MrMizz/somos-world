@@ -1,5 +1,8 @@
 module View.Roadmap.Args exposing (Arg, Args)
 
+import Html exposing (Html)
+import Msg.Msg exposing (Msg)
+
 
 type alias Args =
     { title : String
@@ -10,5 +13,5 @@ type alias Args =
 
 
 type alias Arg =
-    { body : String
+    { body : Html Msg
     }
