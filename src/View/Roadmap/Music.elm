@@ -48,6 +48,7 @@ body =
                 , done =
                     [ { body = "COMPOSITION" }
                     , { body = "PRODUCTION" }
+                    , { body = "RECORDING" }
                     ]
                 }
             ]
