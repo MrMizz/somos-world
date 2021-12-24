@@ -53,7 +53,7 @@ view args =
 li : Arg -> Html Msg
 li arg =
     Html.div
-        [ class "has-border-3 has-font-1 has-opacity"
+        [ class "has-border-3 has-font-1 has-opacity mb-1"
         ]
         [ arg.body
         ]
