@@ -1,7 +1,7 @@
 module View.Roadmap.Music exposing (view)
 
 import Html exposing (Html)
-import Html.Attributes exposing (class)
+import Html.Attributes exposing (class, href, target)
 import Model.State as State exposing (State(..))
 import Msg.Msg exposing (Msg)
 import View.Hero
@@ -24,10 +24,9 @@ body =
             [ Generic.view
                 { title = "CDMX EP"
                 , todo =
-                    [ { body = Html.text "MUSIC VIDEO 02" }
-                    ]
+                    []
                 , doing =
-                    [ { body = Html.text "MUSIC VIDEO 01" }
+                    [ { body = Html.text "MUSIC VIDEO 02" }
                     ]
                 , done =
                     [ { body =
@@ -38,6 +37,15 @@ body =
                                 [ Html.text "RELEASE"
                                 ]
                       }
+                    , { body =
+                            Html.a
+                                [ class "has-sky-blue-text"
+                                , href "https://youtu.be/zAT2mIWgs00"
+                                , target "_blank"
+                                ]
+                                [ Html.text "MUSIC VIDEO 01"
+                                ]
+                    }
                     ]
                 }
             ]
