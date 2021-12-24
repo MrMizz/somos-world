@@ -55,7 +55,6 @@ body =
                     []
                 , done =
                     [ { body = Html.text "COMPOSITION" }
-                    , { body = Html.text "PRODUCTION" }
                     , { body = Html.text "RECORDING" }
                     ]
                 }
