@@ -35,7 +35,9 @@ body =
                                     ]
                                 ]
                       }
-                    , { body =
+                    ]
+                , doing =
+                    [ { body =
                             Html.p
                                 []
                                 [ Html.text "STUDY "
@@ -46,22 +48,6 @@ body =
                                     ]
                                     [ Html.text "GUIDE TO FULL STACK SOLANA DEV"
                                     ]
-                                ]
-                      }
-                    ]
-                , doing =
-                    [ { body =
-                            Html.p
-                                []
-                                [ Html.text "STUDY "
-                                , Html.a
-                                    [ class "has-sky-blue-text"
-                                    , href "https://project-serum.github.io/anchor/getting-started/introduction.html"
-                                    , target "_target"
-                                    ]
-                                    [ Html.text "ANCHOR FRAMEWORK"
-                                    ]
-                                , Html.text " FOR SOLANA DEV & DEPLOY"
                                 ]
                       }
                     ]
@@ -90,6 +76,20 @@ body =
                                     ]
                                     [ Html.text "SOLANA"
                                     ]
+                                ]
+                      }
+                    , { body =
+                            Html.p
+                                []
+                                [ Html.text "STUDY "
+                                , Html.a
+                                    [ class "has-sky-blue-text"
+                                    , href "https://project-serum.github.io/anchor/getting-started/introduction.html"
+                                    , target "_target"
+                                    ]
+                                    [ Html.text "ANCHOR FRAMEWORK"
+                                    ]
+                                , Html.text " FOR SOLANA DEV & DEPLOY"
                                 ]
                       }
                     ]
