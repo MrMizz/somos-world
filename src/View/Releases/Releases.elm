@@ -5,7 +5,6 @@ import Html.Attributes exposing (class, href, target)
 import Model.Project exposing (Project(..))
 import Model.State as State exposing (State(..))
 import Msg.Msg exposing (Msg)
-import View.Hero
 
 
 body : Html Msg
