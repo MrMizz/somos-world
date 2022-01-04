@@ -3,12 +3,13 @@ module View.Header exposing (view)
 import Html exposing (Html)
 import Html.Attributes exposing (class, src, width)
 import Model.Lob exposing (Lob(..))
+import Model.Model exposing (Model)
 import Model.State as State exposing (State(..))
 import Msg.Msg exposing (Msg)
 
 
-view : Html Msg
-view =
+view : Model -> Html Msg
+view model =
     Html.nav
         [ class "level is-mobile"
         ]

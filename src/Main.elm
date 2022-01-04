@@ -4,6 +4,7 @@ module Main exposing (main)
 
 import Browser
 import Browser.Navigation as Nav
+import Html exposing (Html)
 import Model.Lob exposing (Lob(..))
 import Model.Model as Model exposing (Model)
 import Model.Project exposing (Project(..))
@@ -15,6 +16,7 @@ import View.About.About
 import View.Description.EP01
 import View.Error.Error
 import View.Gallery.EP01
+import View.Hero
 import View.Links.Links
 import View.Releases.Releases
 import View.Roadmap.Music
@@ -68,46 +70,50 @@ update msg model =
 view : Model -> Browser.Document Msg
 view model =
     let
+        hero : Html Msg -> Html Msg
+        hero =
+            View.Hero.view model
+
         html =
             case model.state of
                 Releases ->
-                    View.Releases.Releases.view
+                    hero View.Releases.Releases.body
 
                 About ->
-                    View.About.About.view
+                    hero View.About.About.body
 
                 Links ->
-                    View.Links.Links.view
+                    hero View.Links.Links.body
 
                 Gallery project ->
                     case project of
                         EP01 ->
-                            View.Gallery.EP01.view
+                            hero View.Gallery.EP01.body
 
                         LP01 ->
-                            View.Error.Error.view "DNE"
+                            hero (View.Error.Error.body "DNE")
 
                 Description project ->
                     case project of
                         EP01 ->
-                            View.Description.EP01.view
+                            hero View.Description.EP01.body
 
                         LP01 ->
-                            View.Error.Error.view "DNE"
+                            hero (View.Error.Error.body "DNE")
 
                 Roadmap lob ->
                     case lob of
                         Music ->
-                            View.Roadmap.Music.view
+                            hero View.Roadmap.Music.body
 
                         Tech ->
-                            View.Roadmap.Tech.view
+                            hero View.Roadmap.Tech.body
 
                         Total ->
-                            View.Roadmap.Total.view
+                            hero View.Roadmap.Total.body
 
                 Error error ->
-                    View.Error.Error.view error
+                    hero (View.Error.Error.body error)
     in
     { title = "SOMOS *"
     , body =

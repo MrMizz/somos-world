@@ -1,14 +1,8 @@
-module View.Gallery.EP01 exposing (view)
+module View.Gallery.EP01 exposing (body)
 
 import Html exposing (Html)
 import Html.Attributes exposing (class, src)
 import Msg.Msg exposing (Msg)
-import View.Hero
-
-
-view : Html Msg
-view =
-    View.Hero.view body
 
 
 body : Html Msg

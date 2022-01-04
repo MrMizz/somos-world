@@ -1,16 +1,10 @@
-module View.Roadmap.Total exposing (view)
+module View.Roadmap.Total exposing (body)
 
 import Html exposing (Html)
 import Html.Attributes exposing (class)
 import Model.Lob exposing (Lob(..))
 import Model.State as State exposing (State(..))
 import Msg.Msg exposing (Msg)
-import View.Hero
-
-
-view : Html Msg
-view =
-    View.Hero.view body
 
 
 body : Html Msg

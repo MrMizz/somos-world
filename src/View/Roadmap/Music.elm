@@ -1,16 +1,10 @@
-module View.Roadmap.Music exposing (view)
+module View.Roadmap.Music exposing (body)
 
 import Html exposing (Html)
 import Html.Attributes exposing (class, href, target)
 import Model.State as State exposing (State(..))
 import Msg.Msg exposing (Msg)
-import View.Hero
 import View.Roadmap.Generic as Generic
-
-
-view : Html Msg
-view =
-    View.Hero.view body
 
 
 body : Html Msg
