@@ -103,7 +103,6 @@ isActive model state =
                 _ ->
                     ""
 
-
         modelState ->
             case modelState == state of
                 True ->
