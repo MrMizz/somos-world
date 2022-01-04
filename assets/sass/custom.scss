@@ -134,9 +134,15 @@ a:link, a:visited {
   letter-spacing: 10px;
 }
 
-.is-button-1:hover, .is-button-2:hover {
+.is-button-1:hover, .is-button-2:hover, .is-active-header-tab {
   background-color: #FDF9EF;
   color: #241F20;
+}
+
+.is-active-header-tab {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border: 1px dotted #4a4a4a;
 }
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
