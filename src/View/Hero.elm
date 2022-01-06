@@ -1,7 +1,7 @@
 module View.Hero exposing (view)
 
 import Html exposing (Html)
-import Html.Attributes exposing (class)
+import Html.Attributes exposing (class, style)
 import Model.Model exposing (Model)
 import Msg.Msg exposing (Msg)
 import View.Footer
@@ -14,7 +14,7 @@ view model body =
         [ class "hero is-fullheight has-black"
         ]
         [ Html.div
-            [ class "hero-head"
+            [ class "hero-head mb-6"
             ]
             [ View.Header.view model
             ]

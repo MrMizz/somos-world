@@ -16,7 +16,8 @@ view model =
             tab model
     in
     Html.nav
-        []
+        [ class "is-navbar"
+        ]
         [ tab_
             { state = About
             , title = "ABOUT"
@@ -41,7 +42,7 @@ view model =
                 ]
                 [ Html.img
                     [ src "images/logo/02_somos.png"
-                    , width 100
+                    , width 50
                     ]
                     []
                 ]
