@@ -1,7 +1,7 @@
 module View.Header exposing (view)
 
 import Html exposing (Html)
-import Html.Attributes exposing (class, src, width)
+import Html.Attributes exposing (class, src, style, width)
 import Model.Lob exposing (Lob(..))
 import Model.Model exposing (Model)
 import Model.State as State exposing (State(..))
@@ -16,54 +16,34 @@ view model =
             tab model
     in
     Html.nav
-        [ class "level is-mobile"
-        ]
-        [ Html.div
-            [ class "level-left has-font-1"
-            ]
-            [ Html.div
-                [ class "level-item"
-                ]
-                [ Html.div
-                    [ class "tabs is-small has-border-1"
-                    ]
-                    [ Html.ul
-                        []
-                        [ tab_
-                            { state = About
-                            , title = "ABOUT"
-                            }
-                        , tab_
-                            { state = Releases
-                            , title = "RELEASES"
-                            }
-                        , tab_
-                            { state = Links
-                            , title = "LINKS"
-                            }
-                        , tab_
-                            { state = Roadmap Total
-                            , title = "ROADMAP"
-                            }
-                        ]
-                    ]
-                ]
-            ]
+        []
+        [ tab_
+            { state = About
+            , title = "ABOUT"
+            }
+        , tab_
+            { state = Releases
+            , title = "RELEASES"
+            }
+        , tab_
+            { state = Links
+            , title = "LINKS"
+            }
+        , tab_
+            { state = Roadmap Total
+            , title = "ROADMAP"
+            }
         , Html.div
-            [ class "level-right"
+            [ style "float" "right"
             ]
-            [ Html.div
-                [ class "level-item"
+            [ Html.a
+                [ State.href Links
                 ]
-                [ Html.a
-                    [ State.href Links
+                [ Html.img
+                    [ src "images/logo/02_somos.png"
+                    , width 100
                     ]
-                    [ Html.img
-                        [ src "images/logo/02_somos.png"
-                        , width 50
-                        ]
-                        []
-                    ]
+                    []
                 ]
             ]
         ]
@@ -77,13 +57,17 @@ type alias Args =
 
 tab : Model -> Args -> Html Msg
 tab model args =
-    Html.li
-        [ class (isActive model args.state)
+    Html.div
+        [ style "float" "left"
         ]
         [ Html.a
             [ State.href args.state
             ]
-            [ Html.text args.title
+            [ Html.button
+                [ class (String.join " " [ "has-font-1", "is-button-1", isActive model args.state ])
+                ]
+                [ Html.text args.title
+                ]
             ]
         ]
 
