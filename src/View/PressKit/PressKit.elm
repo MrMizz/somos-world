@@ -11,7 +11,7 @@ import Msg.Msg exposing (Msg)
 body : Html Msg
 body =
     Html.div
-        [ class "container has-border-2"
+        [ class "container has-border-2 has-font-1"
         ]
         [ Html.h2
             [ class "has-border-1 mb-2 mx-2"
