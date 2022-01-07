@@ -34,6 +34,10 @@ view model =
             { state = Roadmap Total
             , title = "ROADMAP"
             }
+        , tab_
+            { state = PressKit
+            , title = "PRESS_KIT"
+            }
         , Html.div
             [ style "float" "right"
             ]

@@ -18,6 +18,7 @@ import View.Error.Error
 import View.Gallery.EP01
 import View.Hero
 import View.Links.Links
+import View.PressKit.PressKit
 import View.Releases.Releases
 import View.Roadmap.Music
 import View.Roadmap.Tech
@@ -111,6 +112,9 @@ view model =
 
                         Total ->
                             hero View.Roadmap.Total.body
+
+                PressKit ->
+                    hero View.PressKit.PressKit.body
 
                 Error error ->
                     hero (View.Error.Error.body error)
