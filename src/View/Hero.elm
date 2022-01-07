@@ -1,7 +1,7 @@
 module View.Hero exposing (view)
 
 import Html exposing (Html)
-import Html.Attributes exposing (class, style)
+import Html.Attributes exposing (class)
 import Model.Model exposing (Model)
 import Msg.Msg exposing (Msg)
 import View.Footer
