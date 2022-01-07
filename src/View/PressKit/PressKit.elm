@@ -14,12 +14,12 @@ body =
         [ class "container has-border-2"
         ]
         [ Html.h2
-            [ class "has-border-1 mb-2"
+            [ class "has-border-1 mb-2 mx-2"
             ]
             [ Html.text "CDMX EP"
             ]
         , Html.div
-            [ class "mb-2"
+            [ class "mb-2 mx-2"
             ]
             [ Html.a
                 [ class "has-sky-blue-text"
@@ -29,7 +29,7 @@ body =
                 ]
             ]
         , Html.div
-            [ class "mb-2"
+            [ class "mb-2 mx-2"
             ]
             [ Html.a
                 [ class "has-sky-blue-text"
@@ -40,7 +40,7 @@ body =
                 ]
             ]
         , Html.div
-            [ class "mb-6"
+            [ class "mb-6 mx-2"
             ]
             [ Html.a
                 [ class "has-sky-blue-text"
@@ -50,12 +50,12 @@ body =
                 ]
             ]
         , Html.h2
-            [ class "has-border-1 mb-2"
+            [ class "has-border-1 mb-2 mx-2"
             ]
             [ Html.text "SP LP"
             ]
         , Html.div
-            [ class "mb-2"
+            [ class "mb-2 mx-2"
             ]
             [ Html.a
                 [ class "has-sky-blue-text"
