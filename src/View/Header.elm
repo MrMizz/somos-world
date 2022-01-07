@@ -32,7 +32,7 @@ view model =
             }
         , tab_
             { state = Roadmap Total
-            , title = "ROADMAP"
+            , title = "ROAD_MAP"
             }
         , tab_
             { state = PressKit
