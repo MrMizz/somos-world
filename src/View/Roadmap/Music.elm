@@ -66,16 +66,16 @@ body =
             [ Generic.view
                 { title = "CASA BOLA"
                 , todo =
-                    [ { body = Html.text "MASTER" }
-                    , { body = Html.text "MUSIC VIDEO 01" }
+                    [ { body = Html.text "MUSIC VIDEO 01" }
                     , { body = Html.text "MUSIC VIDEO 02" }
                     ]
                 , doing =
-                    [ { body = Html.text "MIX" }
+                    [ { body = Html.text "MASTER" }
                     ]
                 , done =
                     [ { body = Html.text "PARTY" }
                     , { body = Html.text "RECORDING" }
+                    , { body = Html.text "MIX" }
                     ]
                 }
             ]
