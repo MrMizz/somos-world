@@ -13,7 +13,7 @@ body =
         [ class "container has-font-1"
         ]
         [ Html.h1
-            [ class "has-space-bottom-2"
+            [ class "has-border-1 mb-4"
             ]
             [ Html.text "CDMX_EP / 2021"
             ]
@@ -22,15 +22,15 @@ body =
             [ Html.text "PURCHASE"
             ]
         , Html.p
-            [ class "has-opacity has-space-bottom-1"
+            [ class "has-opacity mb-1"
             ]
             [ Html.text ".WAV FILES FOR DOWNLOAD"
             ]
         , Html.div
-            [ class "has-space-bottom-2"
+            [ class "mb-3"
             ]
             [ link
-                { title = "BANDCAMP_"
+                { title = "bandcamp_"
                 , url = "https://somos-ep.bandcamp.com"
                 }
             ]
@@ -39,23 +39,23 @@ body =
             [ Html.text "STREAMING"
             ]
         , Html.p
-            [ class "has-opacity has-space-bottom-1"
+            [ class "has-opacity mb-1"
             ]
             [ Html.text "SELECT PLATFORM"
             ]
         , Html.div
-            [ class "field is-grouped has-space-bottom-2"
+            [ class "field is-grouped mb-3"
             ]
             [ link
-                { title = "SPOTIFY_"
+                { title = "spotify_"
                 , url = "https://open.spotify.com/album/5dn6SJAGYm2hZFzwh8m5b6?si=Ls6fQ_UMS7C2zIO3njiAJw"
                 }
             , link
-                { title = "APPLE_MUSIC_"
+                { title = "apple_music_"
                 , url = "https://music.apple.com/us/album/cdmx-ep/1596613937"
                 }
             , link
-                { title = "YOUTUBE_"
+                { title = "youtube_"
                 , url = "https://www.youtube.com/playlist?list=PLRe_JtAR_iVWIXOmHEMxZh6AZt_4cGDvV"
                 }
             ]
@@ -64,7 +64,7 @@ body =
             [ Html.text "ET CETERA"
             ]
         , Html.p
-            [ class "has-opacity has-space-bottom-1"
+            [ class "has-opacity mb-1"
             ]
             [ Html.text "PHOTOS, TEXT, ..."
             ]
@@ -111,7 +111,7 @@ link args =
             , target "_blank"
             ]
             [ Html.button
-                [ class "is-button-1"
+                [ class "is-button-1 has-font-1"
                 ]
                 [ Html.text args.title
                 ]
