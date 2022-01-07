@@ -1,6 +1,5 @@
 module View.PressKit.PressKit exposing (body)
 
-
 import Html exposing (Html)
 import Html.Attributes exposing (class, href, target)
 import Model.Lob exposing (Lob(..))
