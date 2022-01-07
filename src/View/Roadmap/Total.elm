@@ -10,7 +10,7 @@ import Msg.Msg exposing (Msg)
 body : Html Msg
 body =
     Html.div
-        [ class "columns is-mobile is-multiline has-font-1"
+        [ class "columns is-mobile is-multiline"
         ]
         [ Html.div
             [ class "column is-12"
@@ -19,7 +19,7 @@ body =
                 [ State.href (Roadmap Music)
                 ]
                 [ Html.button
-                    [ class "is-button-2"
+                    [ class "is-button-2 has-font-1"
                     ]
                     [ Html.text "MUSIC"
                     ]
@@ -32,7 +32,7 @@ body =
                 [ State.href (Roadmap Tech)
                 ]
                 [ Html.button
-                    [ class "is-button-2"
+                    [ class "is-button-2 has-font-1"
                     ]
                     [ Html.text "TECH"
                     ]
