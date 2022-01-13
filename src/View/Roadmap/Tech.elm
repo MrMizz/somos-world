@@ -134,7 +134,7 @@ body =
                                     [ class "has-sky-blue-text"
                                     , href "https://www.brianfriel.xyz/understanding-program-derived-addresses/"
                                     ]
-                                    [ Html.text "UNDERSTANDING PROGRAM DERIVED ADDRESSES"
+                                    [ Html.text "PROGRAM DERIVED ADDRESSES"
                                     ]
                                 ]
                       }
