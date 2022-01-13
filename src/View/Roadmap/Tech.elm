@@ -19,25 +19,39 @@ body =
                     [ { body =
                             Html.p
                                 []
-                                [ Html.text "CONSIDER FORKING "
+                                [ Html.text "STUDY "
                                 , Html.a
                                     [ class "has-sky-blue-text"
-                                    , href "https://github.com/nina-market/nina"
+                                    , href "https://docs.metaplex.com/"
                                     , target "_target"
                                     ]
-                                    [ Html.text "NINA.MARKET"
+                                    [ Html.text "METAPLEX DOCS"
                                     ]
                                 ]
                       }
                     , { body =
                             Html.p
                                 []
-                                [ Html.text "STUDY "
+                                [ Html.text "DEPLOY SOLANA PROGRAM TO "
                                 , Html.a
                                     [ class "has-sky-blue-text"
-                                    , href "https://www.brianfriel.xyz/understanding-program-derived-addresses/"
+                                    , href "https://docs.solana.com/clusters"
+                                    , target "_target"
                                     ]
-                                    [ Html.text "UNDERSTANDING PROGRAM DERIVED ADDRESSES"
+                                    [ Html.text "DEVNET"
+                                    ]
+                                ]
+                      }
+                    , { body =
+                            Html.p
+                                []
+                                [ Html.text "DEPLOY SOLANA PROGRAM TO "
+                                , Html.a
+                                    [ class "has-sky-blue-text"
+                                    , href "https://docs.solana.com/clusters"
+                                    , target "_target"
+                                    ]
+                                    [ Html.text "MAINNET-BETA"
                                     ]
                                 ]
                       }
@@ -46,14 +60,15 @@ body =
                     [ { body =
                             Html.p
                                 []
-                                [ Html.text "STUDY "
+                                [ Html.text "DEVELOP "
                                 , Html.a
                                     [ class "has-sky-blue-text"
-                                    , href "https://dev.to/dabit3/the-complete-guide-to-full-stack-solana-development-with-react-anchor-rust-and-phantom-3291"
+                                    , href "https://github.com/bigtimetapin/somos-solana"
                                     , target "_target"
                                     ]
-                                    [ Html.text "GUIDE TO FULL STACK SOLANA DEV"
+                                    [ Html.text "PROOF OF CONCEPT"
                                     ]
+                                , Html.text " SOLANA D'APP"
                                 ]
                       }
                     ]
@@ -96,6 +111,31 @@ body =
                                     [ Html.text "ANCHOR FRAMEWORK"
                                     ]
                                 , Html.text " FOR SOLANA DEV & DEPLOY"
+                                ]
+                      }
+                    , { body =
+                            Html.p
+                                []
+                                [ Html.text "STUDY "
+                                , Html.a
+                                    [ class "has-sky-blue-text"
+                                    , href "https://dev.to/dabit3/the-complete-guide-to-full-stack-solana-development-with-react-anchor-rust-and-phantom-3291"
+                                    , target "_target"
+                                    ]
+                                    [ Html.text "GUIDE TO FULL STACK SOLANA DEV"
+                                    ]
+                                ]
+                      }
+                    , { body =
+                            Html.p
+                                []
+                                [ Html.text "STUDY "
+                                , Html.a
+                                    [ class "has-sky-blue-text"
+                                    , href "https://www.brianfriel.xyz/understanding-program-derived-addresses/"
+                                    ]
+                                    [ Html.text "UNDERSTANDING PROGRAM DERIVED ADDRESSES"
+                                    ]
                                 ]
                       }
                     ]
