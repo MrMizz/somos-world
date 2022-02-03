@@ -4,16 +4,13 @@ resource "aws_s3_bucket" "domain" {
   bucket = var.domain_name
   force_destroy = true
   acl = "public-read"
-
   website {
     index_document = "index.html"
   }
-
   tags = {
-    Project = "agora"
+    Project = "somos"
     ServiceType = "ui"
   }
-
   policy = <<POLICY
 {
   "Version":"2012-10-17",
@@ -34,16 +31,13 @@ resource "aws_s3_bucket" "sub-domain-dev" {
   bucket = "dev.${var.domain_name}"
   force_destroy = true
   acl = "public-read"
-
   website {
     index_document = "index.html"
   }
-
   tags = {
-    Project = "agora"
+    Project = "somos"
     ServiceType = "ui"
   }
-
   policy = <<POLICY
 {
   "Version":"2012-10-17",
@@ -54,6 +48,33 @@ resource "aws_s3_bucket" "sub-domain-dev" {
       "Principal": "*",
       "Action":["s3:GetObject"],
       "Resource":["arn:aws:s3:::dev.${var.domain_name}/*"]
+    }
+  ]
+}
+POLICY
+}
+
+resource "aws_s3_bucket" "sub-domain-store" {
+  bucket = "store.${var.domain_name}"
+  force_destroy = true
+  acl = "public-read"
+  website {
+    index_document = "index.html"
+  }
+  tags = {
+    Project = "somos"
+    ServiceType = "ui"
+  }
+  policy = <<POLICY
+{
+  "Version":"2012-10-17",
+  "Statement":[
+    {
+      "Sid":"AddPerm",
+      "Effect":"Allow",
+      "Principal": "*",
+      "Action":["s3:GetObject"],
+      "Resource":["arn:aws:s3:::store.${var.domain_name}/*"]
     }
   ]
 }
@@ -75,12 +96,10 @@ resource "aws_s3_bucket" "assets" {
   bucket = "assets.${var.domain_name}"
   force_destroy = true
   acl = "public-read"
-
   tags = {
-    Project = "agora"
+    Project = "somos"
     ServiceType = "ui"
   }
-
   policy = <<POLICY
 {
   "Version":"2012-10-17",

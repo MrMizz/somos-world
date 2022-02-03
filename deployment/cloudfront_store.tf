@@ -13,7 +13,7 @@
 # keep serving the assets to the locals.
 #
 # Man, I should have been a science fiction writer...
-resource "aws_cloudfront_distribution" "client_distribution" {
+resource "aws_cloudfront_distribution" "store" {
   # The "origin" is the actual data we want to distribute.
   # All of the settings are just telling Cloudfront to look
   # at our S3 bucket and serve it's contents when asked for them.
@@ -24,11 +24,11 @@ resource "aws_cloudfront_distribution" "client_distribution" {
     # When we first create our distribution, Cloudfront
     # will download all the assets from this url and
     # then cache them across the world.
-    domain_name = aws_s3_bucket.domain.website_endpoint
+    domain_name = aws_s3_bucket.sub-domain-store.website_endpoint
 
     # the id of the "origin". This is only used for other
     # services to be able to reference this origin
-    origin_id = local.id_for_cloudfront_origin
+    origin_id = local.id_for_cloudfront_origin_store
 
     # This config describes how cloudfront is going
     # connect to the "origin".
@@ -87,7 +87,7 @@ resource "aws_cloudfront_distribution" "client_distribution" {
 
     # the origin (aka source) we will serve to people
     # upon request. Same as the origin_id above but
-    target_origin_id = local.id_for_cloudfront_origin
+    target_origin_id = local.id_for_cloudfront_origin_store
 
     # time to live for each cached copy of the
     # source content cloudfront downloads.
@@ -125,8 +125,7 @@ resource "aws_cloudfront_distribution" "client_distribution" {
   # this is the list of domains that cloudfront will serve content to.
   # So make sure at least one of them matches your domain.
   aliases = [
-    "www.${var.domain_name}",
-    var.domain_name
+    "store.${var.domain_name}"
   ]
 
   # This is the certificate we will use for HTTPS. We use the
@@ -139,7 +138,7 @@ resource "aws_cloudfront_distribution" "client_distribution" {
 
   # Tags to track costs.
   tags = {
-    Project = var.domain_name
+    Project = "somos"
     ServiceType = "ui"
   }
 }
@@ -148,5 +147,5 @@ resource "aws_cloudfront_distribution" "client_distribution" {
 # describe our "origin" (more on that a few lines down) and
 # when we configure how cloudfront caches assets
 locals {
-  id_for_cloudfront_origin = var.domain_name
+  id_for_cloudfront_origin_store = "store.${var.domain_name}"
 }

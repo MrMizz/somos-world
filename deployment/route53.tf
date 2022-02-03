@@ -8,10 +8,22 @@ resource "aws_route53_record" "main" {
   type = "A"
   alias {
     evaluate_target_health = false
-    name = aws_cloudfront_distribution.client_distribution.domain_name
-    zone_id = aws_cloudfront_distribution.client_distribution.hosted_zone_id
+    name = aws_cloudfront_distribution.www.domain_name
+    zone_id = aws_cloudfront_distribution.www.hosted_zone_id
   }
 }
+
+resource "aws_route53_record" "store" {
+  zone_id = aws_route53_zone.main.zone_id
+  name = "store.${var.domain_name}"
+  type = "A"
+  alias {
+    evaluate_target_health = false
+    name = aws_cloudfront_distribution.store.domain_name
+    zone_id = aws_cloudfront_distribution.store.hosted_zone_id
+  }
+}
+
 
 resource "aws_route53_record" "www" {
   zone_id = aws_route53_zone.main.zone_id
@@ -19,8 +31,8 @@ resource "aws_route53_record" "www" {
   type = "A"
   alias {
     evaluate_target_health = false
-    name = aws_cloudfront_distribution.client_distribution.domain_name
-    zone_id = aws_cloudfront_distribution.client_distribution.hosted_zone_id
+    name = aws_cloudfront_distribution.www.domain_name
+    zone_id = aws_cloudfront_distribution.www.hosted_zone_id
   }
 }
 
