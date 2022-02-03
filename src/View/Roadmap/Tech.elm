@@ -19,17 +19,51 @@ body =
                     [ { body =
                             Html.p
                                 []
-                                [ Html.text "STUDY "
+                                [ Html.text "DEPLOY SOLANA PROGRAM TO "
                                 , Html.a
                                     [ class "has-sky-blue-text"
-                                    , href "https://docs.metaplex.com/"
+                                    , href "https://docs.solana.com/clusters"
                                     , target "_target"
                                     ]
-                                    [ Html.text "METAPLEX DOCS"
+                                    [ Html.text "MAINNET-BETA"
                                     ]
                                 ]
                       }
                     , { body =
+                            Html.p
+                                []
+                                [ Html.text "DISCORD SERVER"
+                                ]
+                      }
+                    , { body =
+                            Html.p
+                                []
+                                [ Html.text "ABOUT / FAQ"
+                                ]
+                      }
+                    , { body =
+                            Html.p
+                                []
+                                [ Html.text "SECONDARY MARKET"
+                                ]
+                      }
+                    ]
+                , doing =
+                    [ { body =
+                            Html.p
+                                []
+                                [ Html.text "STYLE APP WITH CSS"
+                                ]
+                      }
+                    , { body =
+                            Html.p
+                                []
+                                [ Html.text "FINALIZE PRICE IN SOL OF RELEASE 01"
+                                ]
+                      }
+                    ]
+                , done =
+                    [ { body =
                             Html.p
                                 []
                                 [ Html.text "DEPLOY SOLANA PROGRAM TO "
@@ -45,21 +79,6 @@ body =
                     , { body =
                             Html.p
                                 []
-                                [ Html.text "DEPLOY SOLANA PROGRAM TO "
-                                , Html.a
-                                    [ class "has-sky-blue-text"
-                                    , href "https://docs.solana.com/clusters"
-                                    , target "_target"
-                                    ]
-                                    [ Html.text "MAINNET-BETA"
-                                    ]
-                                ]
-                      }
-                    ]
-                , doing =
-                    [ { body =
-                            Html.p
-                                []
                                 [ Html.text "DEVELOP "
                                 , Html.a
                                     [ class "has-sky-blue-text"
@@ -71,9 +90,7 @@ body =
                                 , Html.text " SOLANA D'APP"
                                 ]
                       }
-                    ]
-                , done =
-                    [ { body =
+                    , { body =
                             Html.p
                                 []
                                 [ Html.text "RESEARCH "
