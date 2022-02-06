@@ -44,7 +44,7 @@ body =
                     , { body =
                             Html.p
                                 []
-                                [ Html.text "SECONDARY MARKET"
+                                [ Html.text "RELEASE 02"
                                 ]
                       }
                     ]
@@ -52,18 +52,24 @@ body =
                     [ { body =
                             Html.p
                                 []
-                                [ Html.text "STYLE APP WITH CSS"
+                                [ Html.text "FINALIZE PRICE IN SOL OF RELEASE 01"
                                 ]
                       }
                     , { body =
                             Html.p
                                 []
-                                [ Html.text "FINALIZE PRICE IN SOL OF RELEASE 01"
+                                [ Html.text "SECONDARY MARKET"
                                 ]
                       }
                     ]
                 , done =
                     [ { body =
+                            Html.p
+                                []
+                                [ Html.text "STYLE APP WITH CSS"
+                                ]
+                      }
+                    , { body =
                             Html.p
                                 []
                                 [ Html.text "DEPLOY SOLANA PROGRAM TO "
@@ -88,19 +94,6 @@ body =
                                     [ Html.text "PROOF OF CONCEPT"
                                     ]
                                 , Html.text " SOLANA D'APP"
-                                ]
-                      }
-                    , { body =
-                            Html.p
-                                []
-                                [ Html.text "RESEARCH "
-                                , Html.a
-                                    [ class "has-sky-blue-text"
-                                    , href "https://docs.soliditylang.org/en/v0.8.11/"
-                                    , target "_target"
-                                    ]
-                                    [ Html.text "SOLIDITY"
-                                    ]
                                 ]
                       }
                     , { body =
@@ -152,6 +145,19 @@ body =
                                     , href "https://www.brianfriel.xyz/understanding-program-derived-addresses/"
                                     ]
                                     [ Html.text "PROGRAM DERIVED ADDRESSES"
+                                    ]
+                                ]
+                      }
+                    , { body =
+                            Html.p
+                                []
+                                [ Html.text "RESEARCH "
+                                , Html.a
+                                    [ class "has-sky-blue-text"
+                                    , href "https://docs.soliditylang.org/en/v0.8.11/"
+                                    , target "_target"
+                                    ]
+                                    [ Html.text "SOLIDITY"
                                     ]
                                 ]
                       }
