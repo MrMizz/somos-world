@@ -47,12 +47,6 @@ body =
                     [ { body =
                             Html.p
                                 []
-                                [ Html.text "FINALIZE PRICE IN SOL OF RELEASE 01"
-                                ]
-                      }
-                    , { body =
-                            Html.p
-                                []
                                 [ Html.text "DEPLOY SOLANA PROGRAM TO "
                                 , Html.a
                                     [ class "has-sky-blue-text"
@@ -61,6 +55,12 @@ body =
                                     ]
                                     [ Html.text "MAINNET-BETA"
                                     ]
+                                ]
+                      }
+                    , { body =
+                            Html.p
+                                []
+                                [ Html.text "FINALIZE PRICE IN SOL OF RELEASE 01"
                                 ]
                       }
                     , { body =
