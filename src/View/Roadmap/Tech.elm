@@ -19,19 +19,6 @@ body =
                     [ { body =
                             Html.p
                                 []
-                                [ Html.text "DEPLOY SOLANA PROGRAM TO "
-                                , Html.a
-                                    [ class "has-sky-blue-text"
-                                    , href "https://docs.solana.com/clusters"
-                                    , target "_target"
-                                    ]
-                                    [ Html.text "MAINNET-BETA"
-                                    ]
-                                ]
-                      }
-                    , { body =
-                            Html.p
-                                []
                                 [ Html.text "DISCORD SERVER"
                                 ]
                       }
@@ -52,18 +39,31 @@ body =
                     [ { body =
                             Html.p
                                 []
-                                [ Html.text "FINALIZE PRICE IN SOL OF RELEASE 01"
-                                ]
-                      }
-                    , { body =
-                            Html.p
-                                []
                                 [ Html.text "SECONDARY MARKET"
                                 ]
                       }
                     ]
                 , done =
                     [ { body =
+                            Html.p
+                                []
+                                [ Html.text "FINALIZE PRICE IN SOL OF RELEASE 01"
+                                ]
+                      }
+                    , { body =
+                            Html.p
+                                []
+                                [ Html.text "DEPLOY SOLANA PROGRAM TO "
+                                , Html.a
+                                    [ class "has-sky-blue-text"
+                                    , href "https://docs.solana.com/clusters"
+                                    , target "_target"
+                                    ]
+                                    [ Html.text "MAINNET-BETA"
+                                    ]
+                                ]
+                      }
+                    , { body =
                             Html.p
                                 []
                                 [ Html.text "STYLE APP WITH CSS"
