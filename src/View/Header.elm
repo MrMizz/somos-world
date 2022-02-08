@@ -1,7 +1,7 @@
 module View.Header exposing (view)
 
 import Html exposing (Html)
-import Html.Attributes exposing (class, src, style, width)
+import Html.Attributes exposing (class, href, src, style, target, width)
 import Model.Lob exposing (Lob(..))
 import Model.Model exposing (Model)
 import Model.State as State exposing (State(..))
@@ -38,6 +38,20 @@ view model =
             { state = PressKit
             , title = "PRESS_KIT"
             }
+        , Html.div
+            [ style "float" "left"
+            ]
+            [ Html.a
+                [ href "https://store.somos.world/"
+                , target "_blank"
+                ]
+                [ Html.button
+                    [ class (String.join " " [ "has-font-1", "is-button-1" ])
+                    ]
+                    [ Html.text "STORE"
+                    ]
+                ]
+            ]
         , Html.div
             [ style "float" "right"
             ]
