@@ -40,6 +40,17 @@ body =
                 ]
             ]
         , Html.div
+            [ class "mb-2 mx-2"
+            ]
+            [ Html.a
+                [ class "has-sky-blue-text"
+                , href "https://youtu.be/N1TrMoQuKqU"
+                , target "_blank"
+                ]
+                [ Html.text "MUSIC VIDEO 02"
+                ]
+            ]
+        , Html.div
             [ class "mb-6 mx-2"
             ]
             [ Html.a

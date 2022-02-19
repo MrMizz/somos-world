@@ -20,7 +20,7 @@ body =
                 , todo =
                     []
                 , doing =
-                    [ { body = Html.text "MUSIC VIDEO 02" }
+                    [
                     ]
                 , done =
                     [ { body =
@@ -38,6 +38,15 @@ body =
                                 , target "_blank"
                                 ]
                                 [ Html.text "MUSIC VIDEO 01"
+                                ]
+                      }
+                    , { body =
+                            Html.a
+                                [ class "has-sky-blue-text"
+                                , href "https://youtu.be/N1TrMoQuKqU"
+                                , target "_blank"
+                                ]
+                                [ Html.text "MUSIC VIDEO 02"
                                 ]
                       }
                     ]

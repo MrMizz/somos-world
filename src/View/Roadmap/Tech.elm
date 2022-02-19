@@ -16,7 +16,13 @@ body =
             [ Generic.view
                 { title = "Web3"
                 , todo =
-                    [ { body =
+                    [ {body =
+                            Html.p
+                                []
+                                [ Html.text "CHAT ROOM"
+                                ]
+                      }
+                    , { body =
                             Html.p
                                 []
                                 [ Html.text "DISCORD SERVER"
