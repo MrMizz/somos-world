@@ -20,8 +20,7 @@ body =
                 , todo =
                     []
                 , doing =
-                    [
-                    ]
+                    []
                 , done =
                     [ { body =
                             Html.a
