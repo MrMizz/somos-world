@@ -106,6 +106,25 @@ isActive model state =
                 _ ->
                     ""
 
+        Gallery _ ->
+            case state == Releases of
+                True ->
+                    class_
+
+
+                False ->
+                    ""
+
+        Description _ ->
+            case state == Releases of
+                True ->
+                    class_
+
+
+                False ->
+                    ""
+
+
         modelState ->
             case modelState == state of
                 True ->
