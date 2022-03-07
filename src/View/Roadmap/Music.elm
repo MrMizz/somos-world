@@ -57,12 +57,12 @@ body =
             [ Generic.view
                 { title = "SP LP"
                 , todo =
-                    [ { body = Html.text "POST-PRODUCTION" }
-                    , { body = Html.text "MIX" }
-                    , { body = Html.text "MASTER" }
+                    [ { body = Html.text "MASTER" }
                     ]
                 , doing =
-                    []
+                    [ { body = Html.text "POST-PRODUCTION" }
+                    , { body = Html.text "MIX" }
+                    ]
                 , done =
                     [ { body = Html.text "COMPOSITION" }
                     , { body = Html.text "RECORDING" }
