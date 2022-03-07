@@ -111,7 +111,6 @@ isActive model state =
                 True ->
                     class_
 
-
                 False ->
                     ""
 
@@ -120,10 +119,8 @@ isActive model state =
                 True ->
                     class_
 
-
                 False ->
                     ""
-
 
         modelState ->
             case modelState == state of
