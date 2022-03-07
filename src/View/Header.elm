@@ -96,6 +96,15 @@ isActive model state =
     let
         class_ =
             "is-active-header-tab"
+
+        f : Bool -> String
+        f bool =
+            case bool of
+                True ->
+                    class_
+
+                False ->
+                    ""
     in
     case model.state of
         Roadmap _ ->
@@ -107,25 +116,10 @@ isActive model state =
                     ""
 
         Gallery _ ->
-            case state == Releases of
-                True ->
-                    class_
-
-                False ->
-                    ""
+            f (state == Releases)
 
         Description _ ->
-            case state == Releases of
-                True ->
-                    class_
-
-                False ->
-                    ""
+            f (state == Releases)
 
         modelState ->
-            case modelState == state of
-                True ->
-                    class_
-
-                False ->
-                    ""
+            f (modelState == state)
