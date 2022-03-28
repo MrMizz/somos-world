@@ -32,7 +32,7 @@ body =
             }
         , link
             { title = "INSTAGRAM_"
-            , url = "https://www.instagram.com/somos.ep/"
+            , url = "https://www.instagram.com/somos.world/"
             , font = "fab fa-sm fa-instagram"
             }
         ]

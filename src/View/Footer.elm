@@ -14,7 +14,7 @@ view =
             [ class "level-item"
             ]
             [ Html.a
-                [ href "https://www.instagram.com/somos.ep/"
+                [ href "https://www.instagram.com/somos.world/"
                 , target "_blank"
                 ]
                 [ Html.span
