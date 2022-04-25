@@ -13,6 +13,7 @@ import Msg.Msg exposing (Msg(..), resetViewport)
 import Sub.Sub as Sub
 import Url
 import View.About.About
+import View.Alex.Alex
 import View.Description.EP01
 import View.Error.Error
 import View.Gallery.EP01
@@ -115,6 +116,9 @@ view model =
 
                 PressKit ->
                     hero View.PressKit.PressKit.body
+
+                Alex ->
+                    hero View.Alex.Alex.body
 
                 Error error ->
                     hero (View.Error.Error.body error)
