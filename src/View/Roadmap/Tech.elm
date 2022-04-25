@@ -34,18 +34,12 @@ body =
                                 [ Html.text "ABOUT / FAQ"
                                 ]
                       }
-                    , { body =
-                            Html.p
-                                []
-                                [ Html.text "RELEASE 02"
-                                ]
-                      }
                     ]
                 , doing =
                     [ { body =
                             Html.p
                                 []
-                                [ Html.text "SECONDARY MARKET"
+                                [ Html.text "RELEASE 02"
                                 ]
                       }
                     ]
@@ -53,10 +47,22 @@ body =
                     [ { body =
                             Html.p
                                 []
+                                [ Html.a
+                                    [ class "has-sky-blue-text"
+                                    , href "https://store.somos.world/#/sell"
+                                    , target "_target"
+                                    ]
+                                    [ Html.text "SECONDARY MARKET"
+                                    ]
+                                ]
+                      }
+                    , { body =
+                            Html.p
+                                []
                                 [ Html.text "DEPLOY SOLANA PROGRAM TO "
                                 , Html.a
                                     [ class "has-sky-blue-text"
-                                    , href "https://docs.solana.com/clusters"
+                                    , href "https://solscan.io/account/A2UL8cJAGZWetZJRgHizdGJGmsrCGR6ELBtwjj8kGeXp"
                                     , target "_target"
                                     ]
                                     [ Html.text "MAINNET-BETA"
@@ -105,13 +111,12 @@ body =
                     , { body =
                             Html.p
                                 []
-                                [ Html.text "RESEARCH "
+                                [ Html.text "STUDY "
                                 , Html.a
                                     [ class "has-sky-blue-text"
-                                    , href "https://docs.solana.com/"
-                                    , target "_target"
+                                    , href "https://www.brianfriel.xyz/understanding-program-derived-addresses/"
                                     ]
-                                    [ Html.text "SOLANA"
+                                    [ Html.text "PROGRAM DERIVED ADDRESSES"
                                     ]
                                 ]
                       }
@@ -145,12 +150,13 @@ body =
                     , { body =
                             Html.p
                                 []
-                                [ Html.text "STUDY "
+                                [ Html.text "RESEARCH "
                                 , Html.a
                                     [ class "has-sky-blue-text"
-                                    , href "https://www.brianfriel.xyz/understanding-program-derived-addresses/"
+                                    , href "https://docs.solana.com/"
+                                    , target "_target"
                                     ]
-                                    [ Html.text "PROGRAM DERIVED ADDRESSES"
+                                    [ Html.text "SOLANA"
                                     ]
                                 ]
                       }
