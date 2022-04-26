@@ -260,294 +260,290 @@ body =
                     [ class "ml-2 mr-2"
                     ]
                     [ Html.h4
-                        [ class "is-size-5"
+                        [ class "is-size-5 mb-2 has-border-1"
                         ]
                         [ Html.text
                             """🛠 Technologies
                             """
                         ]
                     , Html.div
-                        [ class "ml-2"
+                        [ class "columns"
                         ]
-                        [ Html.ul
-                            [ class "mb-2"
+                        [ Html.div
+                            [ class "column mb-2"
                             ]
-                            [ Html.li
-                                [ class "mb-2"
+                            [ Html.h5
+                                []
+                                [ Html.text "💾 Backend"
                                 ]
-                                [ Html.h5
+                            , Html.div
+                                [ class "ml-5"
+                                ]
+                                [ Html.ul
                                     []
-                                    [ Html.text "💾 Backend"
-                                    ]
-                                , Html.div
-                                    [ class "ml-5"
-                                    ]
-                                    [ Html.ul
-                                        []
-                                        [ Html.li
-                                            [ class "mb-2"
+                                    [ Html.li
+                                        [ class "mb-2"
+                                        ]
+                                        [ Html.a
+                                            [ class "has-sky-blue-text"
+                                            , href "https://www.scala-lang.org"
+                                            , target "_target"
                                             ]
-                                            [ Html.a
-                                                [ class "has-sky-blue-text"
-                                                , href "https://www.scala-lang.org"
-                                                , target "_target"
-                                                ]
-                                                [ Html.text "☑️ Scala"
-                                                ]
+                                            [ Html.text "☑️ Scala"
                                             ]
-                                        , Html.li
-                                            [ class "mb-2"
+                                        ]
+                                    , Html.li
+                                        [ class "mb-2"
+                                        ]
+                                        [ Html.a
+                                            [ class "has-sky-blue-text"
+                                            , href "https://www.rust-lang.org"
+                                            , target "_target"
                                             ]
-                                            [ Html.a
-                                                [ class "has-sky-blue-text"
-                                                , href "https://www.rust-lang.org"
-                                                , target "_target"
-                                                ]
-                                                [ Html.text "☑️ Rust"
-                                                ]
+                                            [ Html.text "☑️ Rust"
                                             ]
-                                        , Html.li
-                                            [ class "mb-2"
+                                        ]
+                                    , Html.li
+                                        [ class "mb-2"
+                                        ]
+                                        [ Html.a
+                                            [ class "has-sky-blue-text"
+                                            , href "https://www.haskell.org"
+                                            , target "_target"
                                             ]
-                                            [ Html.a
-                                                [ class "has-sky-blue-text"
-                                                , href "https://www.haskell.org"
-                                                , target "_target"
-                                                ]
-                                                [ Html.text "☑️ Haskell"
-                                                ]
+                                            [ Html.text "☑️ Haskell"
                                             ]
-                                        , Html.li
-                                            [ class "mb-2"
+                                        ]
+                                    , Html.li
+                                        [ class "mb-2"
+                                        ]
+                                        [ Html.a
+                                            [ class "has-sky-blue-text"
+                                            , href "https://docs.oracle.com/javase/7/docs/api/java/lang/package-summary.html"
+                                            , target "_target"
                                             ]
-                                            [ Html.a
-                                                [ class "has-sky-blue-text"
-                                                , href "https://docs.oracle.com/javase/7/docs/api/java/lang/package-summary.html"
-                                                , target "_target"
-                                                ]
-                                                [ Html.text "☑️ Java"
-                                                ]
+                                            [ Html.text "☑️ Java"
                                             ]
-                                        , Html.li
-                                            [ class "mb-2"
+                                        ]
+                                    , Html.li
+                                        [ class "mb-2"
+                                        ]
+                                        [ Html.a
+                                            [ class "has-sky-blue-text"
+                                            , href "https://www.python.org"
+                                            , target "_target"
                                             ]
-                                            [ Html.a
-                                                [ class "has-sky-blue-text"
-                                                , href "https://www.python.org"
-                                                , target "_target"
-                                                ]
-                                                [ Html.text "☑️ Python"
-                                                ]
+                                            [ Html.text "☑️ Python"
                                             ]
-                                        , Html.li
-                                            [ class "mb-2"
+                                        ]
+                                    , Html.li
+                                        [ class "mb-2"
+                                        ]
+                                        [ Html.a
+                                            [ class "has-sky-blue-text"
+                                            , href "https://nodejs.org/en/"
+                                            , target "_target"
                                             ]
-                                            [ Html.a
-                                                [ class "has-sky-blue-text"
-                                                , href "https://nodejs.org/en/"
-                                                , target "_target"
-                                                ]
-                                                [ Html.text "☑️ NodeJS"
-                                                ]
+                                            [ Html.text "☑️ NodeJS"
                                             ]
                                         ]
                                     ]
                                 ]
-                            , Html.li
-                                [ class "mb-2"
+                            ]
+                        , Html.div
+                            [ class "column mb-2"
+                            ]
+                            [ Html.h5
+                                []
+                                [ Html.text "📲 Web Development"
                                 ]
-                                [ Html.h5
+                            , Html.div
+                                [ class "ml-5"
+                                ]
+                                [ Html.ul
                                     []
-                                    [ Html.text "📲 Web Development"
-                                    ]
-                                , Html.div
-                                    [ class "ml-5"
-                                    ]
-                                    [ Html.ul
-                                        []
-                                        [ Html.li
-                                            [ class "mb-2"
+                                    [ Html.li
+                                        [ class "mb-2"
+                                        ]
+                                        [ Html.a
+                                            [ class "has-sky-blue-text"
+                                            , href "https://elm-lang.org"
+                                            , target "_target"
                                             ]
-                                            [ Html.a
-                                                [ class "has-sky-blue-text"
-                                                , href "https://elm-lang.org"
-                                                , target "_target"
-                                                ]
-                                                [ Html.text "☑️ Elm"
-                                                ]
+                                            [ Html.text "☑️ Elm"
                                             ]
-                                        , Html.li
-                                            [ class "mb-2"
+                                        ]
+                                    , Html.li
+                                        [ class "mb-2"
+                                        ]
+                                        [ Html.a
+                                            [ class "has-sky-blue-text"
+                                            , href "https://www.typescriptlang.org"
+                                            , target "_target"
                                             ]
-                                            [ Html.a
-                                                [ class "has-sky-blue-text"
-                                                , href "https://www.typescriptlang.org"
-                                                , target "_target"
-                                                ]
-                                                [ Html.text "☑️ TypeScript"
-                                                ]
+                                            [ Html.text "☑️ TypeScript"
                                             ]
-                                        , Html.li
-                                            [ class "mb-2"
+                                        ]
+                                    , Html.li
+                                        [ class "mb-2"
+                                        ]
+                                        [ Html.a
+                                            [ class "has-sky-blue-text"
+                                            , href "https://reactjs.org"
+                                            , target "_target"
                                             ]
-                                            [ Html.a
-                                                [ class "has-sky-blue-text"
-                                                , href "https://reactjs.org"
-                                                , target "_target"
-                                                ]
-                                                [ Html.text "☑️ ReactJS"
-                                                ]
+                                            [ Html.text "☑️ ReactJS"
                                             ]
-                                        , Html.li
-                                            [ class "mb-2"
+                                        ]
+                                    , Html.li
+                                        [ class "mb-2"
+                                        ]
+                                        [ Html.a
+                                            [ class "has-sky-blue-text"
+                                            , href "https://rollupjs.org/guide/en/"
+                                            , target "_target"
                                             ]
-                                            [ Html.a
-                                                [ class "has-sky-blue-text"
-                                                , href "https://rollupjs.org/guide/en/"
-                                                , target "_target"
-                                                ]
-                                                [ Html.text "☑️ RollupJS"
-                                                ]
+                                            [ Html.text "☑️ RollupJS"
                                             ]
-                                        , Html.li
-                                            [ class "mb-2"
+                                        ]
+                                    , Html.li
+                                        [ class "mb-2"
+                                        ]
+                                        [ Html.a
+                                            [ class "has-sky-blue-text"
+                                            , href "https://bulma.io"
+                                            , target "_target"
                                             ]
-                                            [ Html.a
-                                                [ class "has-sky-blue-text"
-                                                , href "https://bulma.io"
-                                                , target "_target"
-                                                ]
-                                                [ Html.text "☑️ Bulma"
-                                                ]
+                                            [ Html.text "☑️ Bulma"
                                             ]
                                         ]
                                     ]
                                 ]
-                            , Html.li
-                                [ class "mb-2"
+                            ]
+                        , Html.div
+                            [ class "column mb-2"
+                            ]
+                            [ Html.h5
+                                []
+                                [ Html.text "🏠 Data"
                                 ]
-                                [ Html.h5
+                            , Html.div
+                                [ class "ml-5"
+                                ]
+                                [ Html.ul
                                     []
-                                    [ Html.text "🏠 Data"
-                                    ]
-                                , Html.div
-                                    [ class "ml-5"
-                                    ]
-                                    [ Html.ul
-                                        []
-                                        [ Html.li
-                                            [ class "mb-2"
+                                    [ Html.li
+                                        [ class "mb-2"
+                                        ]
+                                        [ Html.a
+                                            [ class "has-sky-blue-text"
+                                            , href "https://solana.com/"
+                                            , target "_target"
                                             ]
-                                            [ Html.a
-                                                [ class "has-sky-blue-text"
-                                                , href "https://solana.com/"
-                                                , target "_target"
-                                                ]
-                                                [ Html.text "☑️ Solana"
-                                                ]
+                                            [ Html.text "☑️ Solana"
                                             ]
-                                        , Html.li
-                                            [ class "mb-2"
+                                        ]
+                                    , Html.li
+                                        [ class "mb-2"
+                                        ]
+                                        [ Html.a
+                                            [ class "has-sky-blue-text"
+                                            , href "https://spark.apache.org/docs/latest/rdd-programming-guide.html"
+                                            , target "_target"
                                             ]
-                                            [ Html.a
-                                                [ class "has-sky-blue-text"
-                                                , href "https://spark.apache.org/docs/latest/rdd-programming-guide.html"
-                                                , target "_target"
-                                                ]
-                                                [ Html.text "☑️ RDDs"
-                                                ]
+                                            [ Html.text "☑️ RDDs"
                                             ]
-                                        , Html.li
-                                            [ class "mb-2"
+                                        ]
+                                    , Html.li
+                                        [ class "mb-2"
+                                        ]
+                                        [ Html.a
+                                            [ class "has-sky-blue-text"
+                                            , href "https://spark.apache.org/docs/latest/graphx-programming-guide.html"
+                                            , target "_target"
                                             ]
-                                            [ Html.a
-                                                [ class "has-sky-blue-text"
-                                                , href "https://spark.apache.org/docs/latest/graphx-programming-guide.html"
-                                                , target "_target"
-                                                ]
-                                                [ Html.text "☑️ GraphX"
-                                                ]
+                                            [ Html.text "☑️ GraphX"
                                             ]
-                                        , Html.li
-                                            [ class "mb-2"
+                                        ]
+                                    , Html.li
+                                        [ class "mb-2"
+                                        ]
+                                        [ Html.a
+                                            [ class "has-sky-blue-text"
+                                            , href "https://aws.amazon.com/dynamodb/"
+                                            , target "_target"
                                             ]
-                                            [ Html.a
-                                                [ class "has-sky-blue-text"
-                                                , href "https://aws.amazon.com/dynamodb/"
-                                                , target "_target"
-                                                ]
-                                                [ Html.text "☑️ DynamoDB"
-                                                ]
+                                            [ Html.text "☑️ DynamoDB"
                                             ]
-                                        , Html.li
-                                            [ class "mb-2"
+                                        ]
+                                    , Html.li
+                                        [ class "mb-2"
+                                        ]
+                                        [ Html.a
+                                            [ class "has-sky-blue-text"
+                                            , href "https://aws.amazon.com/neptune/"
+                                            , target "_target"
                                             ]
-                                            [ Html.a
-                                                [ class "has-sky-blue-text"
-                                                , href "https://aws.amazon.com/neptune/"
-                                                , target "_target"
-                                                ]
-                                                [ Html.text "☑️ Neptune"
-                                                ]
+                                            [ Html.text "☑️ Neptune"
                                             ]
-                                        , Html.li
-                                            [ class "mb-2"
+                                        ]
+                                    , Html.li
+                                        [ class "mb-2"
+                                        ]
+                                        [ Html.a
+                                            [ class "has-sky-blue-text"
+                                            , href "https://www.elastic.co/"
+                                            , target "_target"
                                             ]
-                                            [ Html.a
-                                                [ class "has-sky-blue-text"
-                                                , href "https://www.elastic.co/"
-                                                , target "_target"
-                                                ]
-                                                [ Html.text "☑️ Elastic"
-                                                ]
+                                            [ Html.text "☑️ Elastic"
                                             ]
                                         ]
                                     ]
                                 ]
-                            , Html.li
-                                [ class "mb-2"
+                            ]
+                        , Html.div
+                            [ class "column mb-2"
+                            ]
+                            [ Html.h5
+                                []
+                                [ Html.text "🚜 DevOps"
                                 ]
-                                [ Html.h5
+                            , Html.div
+                                [ class "ml-5"
+                                ]
+                                [ Html.ul
                                     []
-                                    [ Html.text "🚜 DevOps"
-                                    ]
-                                , Html.div
-                                    [ class "ml-5"
-                                    ]
-                                    [ Html.ul
-                                        []
-                                        [ Html.li
-                                            [ class "mb-2"
+                                    [ Html.li
+                                        [ class "mb-2"
+                                        ]
+                                        [ Html.a
+                                            [ class "has-sky-blue-text"
+                                            , href "https://www.terraform.io"
+                                            , target "_target"
                                             ]
-                                            [ Html.a
-                                                [ class "has-sky-blue-text"
-                                                , href "https://www.terraform.io"
-                                                , target "_target"
-                                                ]
-                                                [ Html.text "☑️ Terraform"
-                                                ]
+                                            [ Html.text "☑️ Terraform"
                                             ]
-                                        , Html.li
-                                            [ class "mb-2"
+                                        ]
+                                    , Html.li
+                                        [ class "mb-2"
+                                        ]
+                                        [ Html.a
+                                            [ class "has-sky-blue-text"
+                                            , href "https://www.jenkins.io"
+                                            , target "_target"
                                             ]
-                                            [ Html.a
-                                                [ class "has-sky-blue-text"
-                                                , href "https://www.jenkins.io"
-                                                , target "_target"
-                                                ]
-                                                [ Html.text "☑️ Jenkins"
-                                                ]
+                                            [ Html.text "☑️ Jenkins"
                                             ]
-                                        , Html.li
-                                            [ class "mb-2"
+                                        ]
+                                    , Html.li
+                                        [ class "mb-2"
+                                        ]
+                                        [ Html.a
+                                            [ class "has-sky-blue-text"
+                                            , href "https://aws.amazon.com"
+                                            , target "_target"
                                             ]
-                                            [ Html.a
-                                                [ class "has-sky-blue-text"
-                                                , href "https://aws.amazon.com"
-                                                , target "_target"
-                                                ]
-                                                [ Html.text "☑️ AWS"
-                                                ]
+                                            [ Html.text "☑️ AWS"
                                             ]
                                         ]
                                     ]
