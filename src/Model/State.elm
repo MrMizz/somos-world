@@ -35,7 +35,7 @@ urlParser =
         , UrlParser.map (Gallery EP01) (UrlParser.s "gallery") </> UrlParser.s (Project.toString EP01)
         , UrlParser.map (Description EP01) (UrlParser.s "description") </> UrlParser.s (Project.toString EP01)
         , UrlParser.map Alex (UrlParser.s "alex")
-        , UrlParser.map Audius (UrlParser.s "alex") </> (UrlParser.s "audius")
+        , UrlParser.map Audius (UrlParser.s "alex") </> UrlParser.s "audius"
         ]
 
 
