@@ -14,6 +14,7 @@ import Sub.Sub as Sub
 import Url
 import View.About.About
 import View.Alex.Alex
+import View.Alex.Audius
 import View.Description.EP01
 import View.Error.Error
 import View.Gallery.EP01
@@ -119,6 +120,9 @@ view model =
 
                 Alex ->
                     hero View.Alex.Alex.body
+
+                Audius ->
+                    hero View.Alex.Audius.body
 
                 Error error ->
                     hero (View.Error.Error.body error)

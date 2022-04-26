@@ -17,6 +17,7 @@ type State
     | Roadmap Lob
     | PressKit
     | Alex
+    | Audius
     | Error String
 
 
@@ -34,6 +35,7 @@ urlParser =
         , UrlParser.map (Gallery EP01) (UrlParser.s "gallery") </> UrlParser.s (Project.toString EP01)
         , UrlParser.map (Description EP01) (UrlParser.s "description") </> UrlParser.s (Project.toString EP01)
         , UrlParser.map Alex (UrlParser.s "alex")
+        , UrlParser.map Audius (UrlParser.s "alex") </> (UrlParser.s "audius")
         ]
 
 
@@ -85,6 +87,9 @@ path state =
 
         Alex ->
             "#/alex"
+
+        Audius ->
+            "#/alex/audius"
 
         Error _ ->
             "#/invalid"
