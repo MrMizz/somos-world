@@ -100,16 +100,17 @@ body =
                                                 [ Html.li
                                                     [ class "mb-2"
                                                     ]
-                                                    [ Html.text "☑️ "
+                                                    [ Html.text "☑️ Custom developed "
                                                     , Html.a
                                                         [ class "has-sky-blue-text"
                                                         , href "https://github.com/bigtimetapin/somos-solana/tree/develop/programs/somos-solana"
                                                         , target "_target"
                                                         ]
                                                         [ Html.text
-                                                            """Custom developed solana-program (smart contract)
+                                                            """solana-program
                                                             """
                                                         ]
+                                                    , Html.text " (smart-contract)"
                                                     ]
                                                 , Html.li
                                                     [ class "mb-2"
