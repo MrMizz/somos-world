@@ -57,6 +57,7 @@ body =
                 ]
                 [ Html.div
                     [ class "ml-2 mr-2"
+                    , style "max-width" "750px"
                     ]
                     [ Html.h4
                         [ class "is-size-5"
