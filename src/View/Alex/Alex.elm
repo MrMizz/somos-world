@@ -450,10 +450,21 @@ body =
                                             ]
                                             [ Html.a
                                                 [ class "has-sky-blue-text"
-                                                , href "https://spark.apache.org/"
+                                                , href "https://spark.apache.org/docs/latest/rdd-programming-guide.html"
                                                 , target "_target"
                                                 ]
-                                                [ Html.text "☑️ Apache Spark"
+                                                [ Html.text "☑️ RDDs"
+                                                ]
+                                            ]
+                                        , Html.li
+                                            [ class "mb-2"
+                                            ]
+                                            [ Html.a
+                                                [ class "has-sky-blue-text"
+                                                , href "https://spark.apache.org/docs/latest/graphx-programming-guide.html"
+                                                , target "_target"
+                                                ]
+                                                [ Html.text "☑️ GraphX"
                                                 ]
                                             ]
                                         , Html.li
