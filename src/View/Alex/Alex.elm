@@ -92,7 +92,7 @@ body =
                                         [ Html.li
                                             [ class "mb-2"
                                             ]
-                                            [ Html.text "✅ Client Data Ingestion"
+                                            [ Html.text "📝 Client Data Ingestion"
                                             ]
                                         , Html.div
                                             [ class "ml-5"
@@ -129,7 +129,7 @@ body =
                                         , Html.li
                                             [ class "mb-2"
                                             ]
-                                            [ Html.text "✅ Entity Resolution"
+                                            [ Html.text "📝 Entity Resolution"
                                             ]
                                         , Html.div
                                             [ class "ml-5"
