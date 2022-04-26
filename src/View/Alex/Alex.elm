@@ -415,6 +415,76 @@ body =
                                 ]
                                 [ Html.h5
                                     []
+                                    [ Html.text "🏠 Data"
+                                    ]
+                                , Html.div
+                                    [ class "ml-5"
+                                    ]
+                                    [ Html.ul
+                                        []
+                                        [ Html.li
+                                            [ class "mb-2"
+                                            ]
+                                            [ Html.a
+                                                [ class "has-sky-blue-text"
+                                                , href "https://solana.com/"
+                                                , target "_target"
+                                                ]
+                                                [ Html.text "☑️ Solana"
+                                                ]
+                                            ]
+                                        , Html.li
+                                            [ class "mb-2"
+                                            ]
+                                            [ Html.a
+                                                [ class "has-sky-blue-text"
+                                                , href "https://spark.apache.org/"
+                                                , target "_target"
+                                                ]
+                                                [ Html.text "☑️ Apache Spark"
+                                                ]
+                                            ]
+                                        , Html.li
+                                            [ class "mb-2"
+                                            ]
+                                            [ Html.a
+                                                [ class "has-sky-blue-text"
+                                                , href "https://aws.amazon.com/dynamodb/"
+                                                , target "_target"
+                                                ]
+                                                [ Html.text "☑️ DynamoDB"
+                                                ]
+                                            ]
+                                        , Html.li
+                                            [ class "mb-2"
+                                            ]
+                                            [ Html.a
+                                                [ class "has-sky-blue-text"
+                                                , href "https://aws.amazon.com/neptune/"
+                                                , target "_target"
+                                                ]
+                                                [ Html.text "☑️ Neptune"
+                                                ]
+                                            ]
+                                        , Html.li
+                                            [ class "mb-2"
+                                            ]
+                                            [ Html.a
+                                                [ class "has-sky-blue-text"
+                                                , href "https://www.elastic.co/"
+                                                , target "_target"
+                                                ]
+                                                [ Html.text "☑️ Elastic"
+                                                ]
+                                            ]
+                                        ]
+                                    ]
+                                ]
+                            , Html.li
+                                [ class "mb-2"
+                                ]
+                                [ Html.h5
+                                    []
                                     [ Html.text "🚜 DevOps"
                                     ]
                                 , Html.div
