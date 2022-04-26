@@ -60,15 +60,18 @@ body =
                     , style "max-width" "750px"
                     ]
                     [ Html.h4
-                        [ class "is-size-5 has-border-1"
+                        [ class "has-border-1 my-3"
                         ]
                         [ Html.a
-                            [ class "has-sky-blue-text mt-2 mb-2"
+                            [ class "has-sky-blue-text is-size-5"
                             , href "https://carpe.io"
                             , target "_target"
                             ]
                             [ Html.text "Carpe Data"
                             ]
+                        , Html.text
+                            """, March 2017 - Present
+                            """
                         ]
                     , Html.div
                         [ class "ml-2"
