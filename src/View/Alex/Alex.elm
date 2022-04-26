@@ -60,7 +60,7 @@ body =
                     , style "max-width" "750px"
                     ]
                     [ Html.h4
-                        [ class "is-size-5"
+                        [ class "is-size-5 has-border-1"
                         ]
                         [ Html.a
                             [ class "has-sky-blue-text mt-2 mb-2"
