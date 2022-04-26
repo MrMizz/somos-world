@@ -64,6 +64,188 @@ body =
                         ]
                         [ Html.a
                             [ class "has-sky-blue-text is-size-5"
+                            , href "https://solana.com/"
+                            , target "_target"
+                            ]
+                            [ Html.text "Solana Blockchain"
+                            ]
+                        ]
+                    , Html.div
+                        [ class "ml-2"
+                        ]
+                        [ Html.ul
+                            [ class "mb-2"
+                            ]
+                            [ Html.li
+                                [ class "mb-2"
+                                ]
+                                [ Html.text "🎖 Fullstack Developer"
+                                , Html.div
+                                    [ class "ml-5"
+                                    ]
+                                    [ Html.ul
+                                        [ class "mb-2"
+                                        ]
+                                        [ Html.li
+                                            [ class "mb-2"
+                                            ]
+                                            [ Html.text "📝 Backend"
+                                            ]
+                                        , Html.div
+                                            [ class "ml-5"
+                                            ]
+                                            [ Html.ul
+                                                [ class "mb-2"
+                                                ]
+                                                [ Html.li
+                                                    [ class "mb-2"
+                                                    ]
+                                                    [ Html.a
+                                                        [ class "has-sky-blue-text"
+                                                        , href "https://github.com/bigtimetapin/somos-solana/tree/develop/programs/somos-solana"
+                                                        , target "_target"
+                                                        ]
+                                                        [ Html.text
+                                                            """☑️ Custom developed solana-program (smart contract)
+                                                            """
+                                                        ]
+                                                    ]
+                                                , Html.li
+                                                    [ class "mb-2"
+                                                    ]
+                                                    [ Html.text
+                                                        """☑️ Escrow-style app with
+                                                        """
+                                                    , Html.a
+                                                        [ class "has-sky-blue-text"
+                                                        , href "https://store.somos.world/#/buy"
+                                                        , target "_target"
+                                                        ]
+                                                        [ Html.text "Primary"
+                                                        ]
+                                                    , Html.text " & "
+                                                    , Html.a
+                                                        [ class "has-sky-blue-text"
+                                                        , href "https://store.somos.world/#/sell"
+                                                        , target "_target"
+                                                        ]
+                                                        [ Html.text "Secondary"
+                                                        ]
+                                                    , Html.text " markets"
+                                                    ]
+                                                , Html.li
+                                                    [ class "mb-2"
+                                                    ]
+                                                    [ Html.text
+                                                        """☑️ encrypted download of digital assets authenticated &
+                                                        authorized with user
+                                                        """
+                                                    , Html.a
+                                                        [ class "has-sky-blue-text"
+                                                        , href "https://docs.solana.com/wallet-guide"
+                                                        , target "_target"
+                                                        ]
+                                                        [ Html.text "key-pair"
+                                                        ]
+                                                    ]
+                                                ]
+                                            ]
+                                        , Html.li
+                                            [ class "mb-2"
+                                            ]
+                                            [ Html.text "📝 Frontend"
+                                            ]
+                                        , Html.div
+                                            [ class "ml-5"
+                                            ]
+                                            [ Html.ul
+                                                [ class "mb-2"
+                                                ]
+                                                [ Html.li
+                                                    [ class "mb-2"
+                                                    ]
+                                                    [ Html.text
+                                                        """☑️
+                                                        """
+                                                    , Html.a
+                                                        [ class "has-sky-blue-text"
+                                                        , href "https://github.com/project-serum/anchor"
+                                                        , target "_target"
+                                                        ]
+                                                        [ Html.text "anchor-lang"
+                                                        ]
+                                                    , Html.text
+                                                        """,
+                                                        """
+                                                    , Html.a
+                                                        [ class "has-sky-blue-text"
+                                                        , href "https://github.com/solana-labs/solana-web3.js/"
+                                                        , target "_target"
+                                                        ]
+                                                        [ Html.text "web3.js"
+                                                        ]
+                                                    , Html.text
+                                                        """,
+                                                        """
+                                                    , Html.a
+                                                        [ class "has-sky-blue-text"
+                                                        , href "https://github.com/dchest/tweetnacl-js"
+                                                        , target "_target"
+                                                        ]
+                                                        [ Html.text "tweetnacl.js"
+                                                        ]
+                                                    ]
+                                                , Html.li
+                                                    [ class "mb-2"
+                                                    ]
+                                                    [ Html.text
+                                                            """☑️ Probably the first
+                                                            """
+                                                    , Html.a
+                                                        [ class "has-sky-blue-text"
+                                                        , href "https://github.com/bigtimetapin/somos-solana/blob/develop/assets/js/anchor/main.js"
+                                                        , target "_target"
+                                                        ]
+                                                        [ Html.text "integration"
+                                                        ]
+                                                    , Html.text " with "
+                                                    , Html.a
+                                                        [ class "has-sky-blue-text"
+                                                        , href "https://elm-lang.org"
+                                                        , target "_target"
+                                                        ]
+                                                        [ Html.text "Elm"
+                                                        ]
+                                                    , Html.text " and "
+                                                    , Html.a
+                                                        [ class "has-sky-blue-text"
+                                                        , href "https://docs.phantom.app/"
+                                                        , target "_target"
+                                                        ]
+                                                        [ Html.text "Phantom wallet"
+                                                        ]
+                                                    ]
+                                                ]
+                                            ]
+                                        ]
+                                    ]
+                                ]
+                            ]
+                        ]
+                    ]
+                ]
+            , Html.div
+                [ class "has-border-3 mb-5"
+                ]
+                [ Html.div
+                    [ class "ml-2 mr-2"
+                    , style "max-width" "750px"
+                    ]
+                    [ Html.h4
+                        [ class "has-border-1 my-3"
+                        ]
+                        [ Html.a
+                            [ class "has-sky-blue-text is-size-5"
                             , href "https://carpe.io"
                             , target "_target"
                             ]
