@@ -100,13 +100,14 @@ body =
                                                 [ Html.li
                                                     [ class "mb-2"
                                                     ]
-                                                    [ Html.a
+                                                    [ Html.text "☑️ "
+                                                    , Html.a
                                                         [ class "has-sky-blue-text"
                                                         , href "https://github.com/bigtimetapin/somos-solana/tree/develop/programs/somos-solana"
                                                         , target "_target"
                                                         ]
                                                         [ Html.text
-                                                            """☑️ Custom developed solana-program (smart contract)
+                                                            """Custom developed solana-program (smart contract)
                                                             """
                                                         ]
                                                     ]
@@ -349,13 +350,14 @@ body =
                                                 , Html.li
                                                     [ class "mb-2"
                                                     ]
-                                                    [ Html.a
+                                                    [ Html.text "☑️ "
+                                                    , Html.a
                                                         [ class "has-sky-blue-text"
                                                         , href "https://en.wikipedia.org/wiki/MinHash"
                                                         , target "_target"
                                                         ]
                                                         [ Html.text
-                                                            """☑️ Min-Hash
+                                                            """Min-Hash
                                                             """
                                                         ]
                                                     , Html.text
