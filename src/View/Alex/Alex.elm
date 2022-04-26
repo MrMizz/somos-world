@@ -189,7 +189,19 @@ body =
                                                     ]
                                                     [ Html.text
                                                         """☑️ ML model that supplements min-hash ids deployed as HTTP
-                                                        endpoint bounded by an SLA with response time <1000ms
+                                                        endpoint bounded by a
+                                                        """
+                                                    , Html.a
+                                                        [ class "has-sky-blue-text"
+                                                        , href "https://en.wikipedia.org/wiki/Service-level_agreement"
+                                                        , target "_target"
+                                                        ]
+                                                        [ Html.text
+                                                            """SLA
+                                                            """
+                                                        ]
+                                                    , Html.text
+                                                        """ with response time <1000ms
                                                         """
                                                     ]
                                                 ]
