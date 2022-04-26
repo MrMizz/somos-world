@@ -200,7 +200,7 @@ body =
                                                     [ class "mb-2"
                                                     ]
                                                     [ Html.text
-                                                            """☑️ Probably the first
+                                                        """☑️ Probably the first
                                                             """
                                                     , Html.a
                                                         [ class "has-sky-blue-text"
