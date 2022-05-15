@@ -18,13 +18,17 @@ type State
     | PressKit
     | Alex
     | Audius
+    | Tickets
     | Error String
 
 
 urlParser : UrlParser.Parser (State -> c) c
 urlParser =
     UrlParser.oneOf
-        [ UrlParser.map Links UrlParser.top
+        [ UrlParser.map Tickets UrlParser.top
+
+        -- [ UrlParser.map Links UrlParser.top
+        , UrlParser.map Tickets (UrlParser.s "tickets")
         , UrlParser.map Releases (UrlParser.s "releases")
         , UrlParser.map About (UrlParser.s "about")
         , UrlParser.map Links (UrlParser.s "links")
@@ -90,6 +94,9 @@ path state =
 
         Audius ->
             "#/alex/audius"
+
+        Tickets ->
+            "#/tickets"
 
         Error _ ->
             "#/invalid"

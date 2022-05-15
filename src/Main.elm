@@ -25,6 +25,7 @@ import View.Releases.Releases
 import View.Roadmap.Music
 import View.Roadmap.Tech
 import View.Roadmap.Total
+import View.Tickets.Tickets
 
 
 main : Program () Model Msg
@@ -123,6 +124,9 @@ view model =
 
                 Audius ->
                     hero View.Alex.Audius.body
+
+                Tickets ->
+                    hero View.Tickets.Tickets.body
 
                 Error error ->
                     hero (View.Error.Error.body error)
