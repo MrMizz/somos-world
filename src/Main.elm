@@ -125,9 +125,6 @@ view model =
                 Audius ->
                     hero View.Alex.Audius.body
 
-                Tickets ->
-                    hero View.Tickets.Tickets.body
-
                 Error error ->
                     hero (View.Error.Error.body error)
     in
