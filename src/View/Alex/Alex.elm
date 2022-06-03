@@ -254,7 +254,7 @@ body =
                             [ Html.text "Carpe Data"
                             ]
                         , Html.text
-                            """, March 2017 - Present
+                            """, March 2017 - May 2022
                             """
                         ]
                     , Html.div
@@ -266,7 +266,7 @@ body =
                             [ Html.li
                                 [ class "mb-2"
                                 ]
-                                [ Html.text "🎖 Software Engineer Lead, January 2020 - Present"
+                                [ Html.text "🎖 Software Engineer Lead, January 2020 - May 2022"
                                 , Html.div
                                     [ class "ml-5"
                                     ]
