@@ -26,6 +26,11 @@ body =
             , font = "fab fa-sm fa-itunes"
             }
         , link
+            { title = "SOUND_CLOUD_"
+            , url = "https://soundcloud.com/somos-world"
+            , font = "fab fa-sm fa-soundcloud"
+            }
+        , link
             { title = "YOUTUBE_"
             , url = "https://www.youtube.com/channel/UCaAHeEOtcuOP_s9K8YKgTDw"
             , font = "fab fa-sm fa-youtube"
