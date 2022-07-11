@@ -21,6 +21,7 @@ import View.Gallery.EP01
 import View.Hero
 import View.Links.Links
 import View.PressKit.PressKit
+import View.Radio.Radio
 import View.Releases.Releases
 import View.Roadmap.Music
 import View.Roadmap.Tech
@@ -115,6 +116,9 @@ view model =
 
                         Total ->
                             hero View.Roadmap.Total.body
+
+                Radio radio ->
+                    hero <| View.Radio.Radio.body radio
 
                 PressKit ->
                     hero View.PressKit.PressKit.body

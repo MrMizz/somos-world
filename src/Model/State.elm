@@ -4,6 +4,7 @@ import Html
 import Html.Attributes
 import Model.Lob as Lob exposing (Lob(..))
 import Model.Project as Project exposing (Project(..))
+import Model.Radio as Radio exposing (Episode, Radio(..))
 import Url
 import Url.Parser as UrlParser exposing ((</>))
 
@@ -16,6 +17,7 @@ type State
     | Description Project
     | Roadmap Lob
     | PressKit
+    | Radio Radio.Radio
     | Alex
     | Audius
       -- | Tickets
@@ -35,6 +37,8 @@ urlParser =
         , UrlParser.map (Roadmap Total) (UrlParser.s "roadmap")
         , UrlParser.map (Roadmap Music) (UrlParser.s "roadmap") </> UrlParser.s (Lob.toString Music)
         , UrlParser.map (Roadmap Tech) (UrlParser.s "roadmap") </> UrlParser.s (Lob.toString Tech)
+        , UrlParser.map (Radio Top) (UrlParser.s "radio")
+        , UrlParser.map Radio Radio.urlParser
         , UrlParser.map (Gallery EP01) (UrlParser.s "gallery") </> UrlParser.s (Project.toString EP01)
         , UrlParser.map (Description EP01) (UrlParser.s "description") </> UrlParser.s (Project.toString EP01)
         , UrlParser.map Alex (UrlParser.s "alex")
@@ -87,6 +91,14 @@ path state =
 
         PressKit ->
             "#/press-kit"
+
+        Radio radio ->
+            case radio of
+                Top ->
+                    "#/radio"
+
+                Selected episode ->
+                    String.concat [ "#/", Radio.toString episode ]
 
         Alex ->
             "#/alex"
