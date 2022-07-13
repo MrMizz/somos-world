@@ -1,7 +1,7 @@
 module View.Radio.Radio exposing (body)
 
 import Html exposing (Html)
-import Html.Attributes exposing (class, height, src, style, target, width)
+import Html.Attributes exposing (class, height, src, style, target)
 import Model.Radio as Radio exposing (Episode, Radio(..))
 import Model.State as State exposing (State(..))
 import Msg.Msg exposing (Msg)
