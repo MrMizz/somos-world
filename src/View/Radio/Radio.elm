@@ -52,9 +52,19 @@ episode_ arg =
             Radio.toLinks arg
     in
     Html.div
-        [ class "pb-3"
-        ]
+        []
         [ Html.div
+            [ class "pb-3"
+            ]
+            [ Html.a
+                [ class "has-sky-blue-text"
+                , State.href <| State.Radio Radio.Top
+                ]
+                [ Html.text "RADIO_"
+                ]
+            , Html.text <| String.concat [ " ", "/", Radio.toString arg ]
+            ]
+        , Html.div
             [ class "pb-1"
             ]
             [ Html.iframe

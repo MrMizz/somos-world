@@ -4,6 +4,7 @@ import Html exposing (Html)
 import Html.Attributes exposing (class, href, src, style, target, width)
 import Model.Lob exposing (Lob(..))
 import Model.Model exposing (Model)
+import Model.Radio as Radio
 import Model.State as State exposing (State(..))
 import Msg.Msg exposing (Msg)
 
@@ -37,6 +38,10 @@ view model =
         , tab_
             { state = PressKit
             , title = "PRESS_KIT"
+            }
+        , tab_
+            { state = Radio Radio.Top
+            , title = "RADIO"
             }
         , Html.div
             [ style "float" "left"
@@ -110,6 +115,14 @@ isActive model state =
         Roadmap _ ->
             case state of
                 Roadmap _ ->
+                    class_
+
+                _ ->
+                    ""
+
+        Radio _ ->
+            case state of
+                Radio _ ->
                     class_
 
                 _ ->
