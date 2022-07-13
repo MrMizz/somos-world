@@ -30,12 +30,12 @@ toLinks : Episode -> Links
 toLinks episode =
     case episode of
         One ->
-            { soundcloud = "https://soundcloud.com/somos-world/001a?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing"
+            { soundcloud = "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1298355940&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
             , tidal = "https://tidal.com/browse/playlist/0c492f3a-7ac4-4e57-a28d-9f2c401cf9c0"
             }
 
         Two ->
-            { soundcloud = "https://soundcloud.com/somos-world/002a?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing"
+            { soundcloud = "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1302046477&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
             , tidal = "https://tidal.com/browse/playlist/e97a487d-e5e7-4b9d-8d12-33443e3e133b"
             }
 

@@ -1,7 +1,7 @@
 module View.Radio.Radio exposing (body)
 
 import Html exposing (Html)
-import Html.Attributes exposing (class, target)
+import Html.Attributes exposing (class, height, src, style, target, width)
 import Model.Radio as Radio exposing (Episode, Radio(..))
 import Model.State as State exposing (State(..))
 import Msg.Msg exposing (Msg)
@@ -57,13 +57,39 @@ episode_ arg =
         [ Html.div
             [ class "pb-1"
             ]
-            [ Html.a
-                [ Html.Attributes.href links.soundcloud
-                , class "has-sky-blue-text"
-                , target "_blank"
+            [ Html.iframe
+                [ height 300
+                , style "width" "100%"
+                , style "scrolling" "no"
+                , style "frameborder" "no"
+                , style "allow" "autoplay"
+                , src links.soundcloud
                 ]
-                [ Html.text "Listen on SoundCloud"
-                ]
+                []
+
+            -- , Html.div
+            --     [ class "is-soundcloud"
+            --     ]
+            --     [ Html.a
+            --         [ Html.Attributes.href "https://soundcloud.com/somos-world"
+            --         , style "title" "somos*"
+            --         , style "color" "#cccccc"
+            --         , style "text-decoration" "none"
+            --         , target"_blank"
+            --         ]
+            --         [ Html.text "somos*"
+            --         ]
+            --     , Html.a
+            --         [ Html.Attributes.href "https://soundcloud.com/somos-world/001a"
+            --         , style "title" "001"
+            --         , style "color" "#cccccc"
+            --         , style "text-decoration" "none"
+            --         , target"_blank"
+            --         ]
+            --         [ Html.text "001"
+            --         ]
+            --     ]
+            -- ]
             ]
         , Html.div
             [ class "pb-1"
