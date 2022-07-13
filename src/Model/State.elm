@@ -98,7 +98,7 @@ path state =
                     "#/radio"
 
                 Selected episode ->
-                    String.concat [ "#/", Radio.toString episode ]
+                    String.concat [ "#/radio/", Radio.toString episode ]
 
         Alex ->
             "#/alex"
