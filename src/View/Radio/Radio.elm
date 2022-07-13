@@ -66,30 +66,6 @@ episode_ arg =
                 , src links.soundcloud
                 ]
                 []
-
-            -- , Html.div
-            --     [ class "is-soundcloud"
-            --     ]
-            --     [ Html.a
-            --         [ Html.Attributes.href "https://soundcloud.com/somos-world"
-            --         , style "title" "somos*"
-            --         , style "color" "#cccccc"
-            --         , style "text-decoration" "none"
-            --         , target"_blank"
-            --         ]
-            --         [ Html.text "somos*"
-            --         ]
-            --     , Html.a
-            --         [ Html.Attributes.href "https://soundcloud.com/somos-world/001a"
-            --         , style "title" "001"
-            --         , style "color" "#cccccc"
-            --         , style "text-decoration" "none"
-            --         , target"_blank"
-            --         ]
-            --         [ Html.text "001"
-            --         ]
-            --     ]
-            -- ]
             ]
         , Html.div
             [ class "pb-1"
