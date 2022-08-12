@@ -81,6 +81,33 @@ resource "aws_s3_bucket" "sub-domain-store" {
 POLICY
 }
 
+resource "aws_s3_bucket" "sub-domain-datum" {
+  bucket = "datum.${var.domain_name}"
+  force_destroy = true
+  acl = "public-read"
+  website {
+    index_document = "index.html"
+  }
+  tags = {
+    Project = "somos"
+    ServiceType = "ui"
+  }
+  policy = <<POLICY
+{
+  "Version":"2012-10-17",
+  "Statement":[
+    {
+      "Sid":"AddPerm",
+      "Effect":"Allow",
+      "Principal": "*",
+      "Action":["s3:GetObject"],
+      "Resource":["arn:aws:s3:::datum.${var.domain_name}/*"]
+    }
+  ]
+}
+POLICY
+}
+
 resource "aws_s3_bucket" "sub-domain-www" {
   bucket = "www.${var.domain_name}"
   force_destroy = true

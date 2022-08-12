@@ -24,6 +24,18 @@ resource "aws_route53_record" "store" {
   }
 }
 
+resource "aws_route53_record" "datum" {
+  zone_id = aws_route53_zone.main.zone_id
+  name = "datum.${var.domain_name}"
+  type = "A"
+  alias {
+    evaluate_target_health = false
+    name = data.aws_cloudfront_distribution.datum.domain_name
+    zone_id = data.aws_cloudfront_distribution.datum.hosted_zone_id
+  }
+}
+
+
 
 resource "aws_route53_record" "www" {
   zone_id = aws_route53_zone.main.zone_id
