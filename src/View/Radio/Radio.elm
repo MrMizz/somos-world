@@ -17,10 +17,19 @@ body radio =
                 [ Html.div
                     [ class "has-border-2"
                     ]
-                    (List.map
-                        top
-                        Radio.episodes
-                    )
+                  <|
+                    Html.div
+                        [ class "ml-3 mb-3"
+                        ]
+                        [ Html.h2
+                            [ class "is-family-secondary"
+                            ]
+                            [ Html.text "Radio"
+                            ]
+                        ]
+                        :: List.map
+                            top
+                            Radio.episodes
                 ]
 
         Selected episode ->
@@ -34,13 +43,24 @@ body radio =
 top : Episode -> Html Msg
 top arg =
     Html.div
-        [ class "pl-3 pb-3"
+        [ class "mb-4"
         ]
-        [ Html.a
-            [ State.href <| State.Radio <| Radio.Selected arg
-            , class "has-sky-blue-text"
+        [ Html.div
+            [ class "has-border-3 mx-3 pt-5 pb-2"
             ]
-            [ Html.text <| String.join " " [ "episode_", Radio.toString arg ]
+            [ Html.a
+                [ State.href <| State.Radio <| Radio.Selected arg
+                , class "has-sky-blue-text pl-2 pb-2"
+                ]
+                [ Html.text <| String.join " " [ "episode_", Radio.toString arg ]
+                ]
+            , Html.text <|
+                String.concat
+                    [ " "
+                    , "➡️"
+                    , " "
+                    , Radio.toDescription arg
+                    ]
             ]
         ]
 
@@ -62,7 +82,18 @@ episode_ arg =
                 ]
                 [ Html.text "RADIO_"
                 ]
-            , Html.text <| String.concat [ " ", "/", Radio.toString arg ]
+            , Html.text <|
+                String.concat
+                    [ " "
+                    , "/"
+                    , "Episode"
+                    , " "
+                    , Radio.toString arg
+                    , " "
+                    , "➡️"
+                    , " "
+                    , Radio.toDescription arg
+                    ]
             ]
         , Html.div
             [ class "pb-1"

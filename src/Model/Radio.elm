@@ -1,4 +1,4 @@
-module Model.Radio exposing (Episode(..), Radio(..), episodes, toLinks, toString, urlParser)
+module Model.Radio exposing (Episode(..), Radio(..), episodes, toDescription, toLinks, toString, urlParser)
 
 import Url.Parser as UrlParser exposing ((</>))
 
@@ -24,6 +24,10 @@ type alias Links =
     { soundcloud : String
     , tidal : String
     }
+
+
+type alias Description =
+    String
 
 
 episodes : List Episode
@@ -87,6 +91,37 @@ toLinks episode =
             { soundcloud = "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1332070948&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
             , tidal = "https://tidal.com/browse/playlist/6d40b77e-c7f9-4ff5-bf2e-86d0cacb704b"
             }
+
+
+toDescription : Episode -> String
+toDescription episode =
+    case episode of
+        One ->
+            "80s Dance"
+
+        Two ->
+            "80s Mid-tempo"
+
+        Three ->
+            "Sade (Exclusive Hour)"
+
+        Four ->
+            "70s Jazz Fusion"
+
+        Five ->
+            "70s Jazz Fusion (Up-tempo)"
+
+        Six ->
+            "80s Dance"
+
+        Seven ->
+            "Samba/MPB"
+
+        Eight ->
+            "80s Dance"
+
+        Nine ->
+            "80s Funk & Boogie"
 
 
 toString : Episode -> String
