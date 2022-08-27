@@ -8,7 +8,7 @@ import Msg.Msg exposing (Msg)
 body : Html Msg
 body =
     Html.div
-        [ class "container"
+        [ class "container has-border-3 pt-2 pb-6 px-3"
         ]
         [ Html.p
             [ class "has-font-1"
@@ -16,14 +16,6 @@ body =
             [ Html.span
                 []
                 [ Html.text "SOMOS *"
-                ]
-            ]
-        , Html.p
-            [ class "has-font-1 has-opacity"
-            ]
-            [ Html.span
-                []
-                [ Html.text "[we are] [anything]"
                 ]
             ]
         , Html.p
@@ -38,7 +30,7 @@ body =
                 , href "https://en.wikipedia.org/wiki/Wildcard_character"
                 , target "_blank"
                 ]
-                [ Html.text " [wildcard]"
+                [ Html.text " [anything]"
                 ]
             ]
         , Html.p
