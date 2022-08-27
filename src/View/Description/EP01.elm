@@ -14,32 +14,37 @@ body =
         [ Html.p
             []
             [ Html.div
-                [ class "has-space-bottom-2"
+                [ class "has-border-1"
                 ]
                 [ Html.a
-                    [ class "has-sky-blue-text"
+                    [ class "has-sky-blue-text is-family-secondary"
                     , State.href <| State.Releases
                     ]
                     [ Html.text "CDMX EP"
                     ]
-                , Html.text
-                    """ was recorded in 3 days in Mexico City.
-                    """
                 ]
             , Html.div
-                [ class "has-space-bottom-2 has-opacity"
+                [ class "mt-3 has-opacity"
                 ]
                 [ Html.text
                     """
-                    All composition & production was done "on the spot".
+                    Recorded in 3 days in Mexico City
                     """
                 ]
             , Html.div
-                [ class "has-opacity"
+                [ class "mt-3 has-opacity"
                 ]
                 [ Html.text
                     """
-                    What became from that approach is an honest sound.
+                    All composition & production was done "on the spot"
+                    """
+                ]
+            , Html.div
+                [ class "mt-3 has-opacity"
+                ]
+                [ Html.text
+                    """
+                    What became from that approach is an honest sound
                     """
                 ]
             ]
