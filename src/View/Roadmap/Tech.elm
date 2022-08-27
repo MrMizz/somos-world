@@ -17,14 +17,15 @@ body =
             [ class "mt-6"
             ]
             [ Html.div
-                [ class "mb-3"
+                [ class "mb-3 is-family-secondary ml-2"
                 ]
                 [ Html.a
-                    [ class "has-sky-blue-text is-family-secondary ml-2"
+                    [ class "has-sky-blue-text"
                     , State.href <| State.Roadmap Lob.Total
                     ]
                     [ Html.text "Road Map"
                     ]
+                , Html.text "/ Tech"
                 ]
             , Generic.view
                 { title = "Web3"
