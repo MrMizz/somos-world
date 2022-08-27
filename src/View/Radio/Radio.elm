@@ -46,21 +46,23 @@ top arg =
         [ class "mb-4"
         ]
         [ Html.div
-            [ class "has-border-3 mx-3 pt-5 pb-2"
+            [ class "has-border-3 mx-3 pl-2 pt-5 pb-2"
             ]
             [ Html.a
                 [ State.href <| State.Radio <| Radio.Selected arg
-                , class "has-sky-blue-text pl-2 pb-2"
+                , class "has-sky-blue-text"
                 ]
                 [ Html.text <| String.join " " [ "episode_", Radio.toString arg ]
                 ]
-            , Html.text <|
-                String.concat
-                    [ " "
-                    , "➡️"
-                    , " "
-                    , Radio.toDescription arg
-                    ]
+            , Html.div
+                []
+                [ Html.text <|
+                    String.concat
+                        [ "➡️"
+                        , " "
+                        , Radio.toDescription arg
+                        ]
+                ]
             ]
         ]
 
