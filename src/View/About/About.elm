@@ -37,7 +37,8 @@ body =
             [ class "has-font-1 has-opacity"
             ]
             [ Html.div
-                []
+                [ class "mb-2"
+                ]
                 [ Html.p
                     []
                     [ Html.text
