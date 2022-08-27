@@ -74,7 +74,8 @@ episode_ arg =
             Radio.toLinks arg
     in
     Html.div
-        []
+        [ class "has-border-3 pt-2 pb-6 px-3"
+        ]
         [ Html.div
             [ class "pb-3"
             ]
