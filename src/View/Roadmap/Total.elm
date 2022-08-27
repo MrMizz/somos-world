@@ -16,7 +16,7 @@ body =
             [ class "has-border-2 pb-6 px-3"
             ]
             [ Html.h2
-                [ class "is-family-secondary mb-3 ml-2"
+                [ class "is-family-secondary mb-6 ml-2"
                 ]
                 [ Html.text "Road Map"
                 ]
