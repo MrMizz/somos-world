@@ -11,15 +11,16 @@ import View.Roadmap.Generic as Generic
 body : Html Msg
 body =
     Html.div
-        [ class "container has-border-2 px-6 pb-6"
+        [ class "container"
         ]
         [ Html.div
-            []
+            [ class "mt-6"
+            ]
             [ Html.div
-                [ class "mb-6"
+                [ class "mb-3"
                 ]
                 [ Html.a
-                    [ class "has-sky-blue-text is-family-secondary"
+                    [ class "has-sky-blue-text is-family-secondary ml-2"
                     , State.href <| State.Roadmap Lob.Total
                     ]
                     [ Html.text "Road Map"
