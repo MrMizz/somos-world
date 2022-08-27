@@ -22,7 +22,7 @@ body radio =
                         [ class "ml-3 mb-3"
                         ]
                         [ Html.h2
-                            [ class "is-family-secondary"
+                            [ class "is-family-secondary ml-2"
                             ]
                             [ Html.text "Radio"
                             ]

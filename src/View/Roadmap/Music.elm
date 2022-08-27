@@ -2,6 +2,7 @@ module View.Roadmap.Music exposing (body)
 
 import Html exposing (Html)
 import Html.Attributes exposing (class, href, target)
+import Model.Lob as Lob
 import Model.State as State exposing (State(..))
 import Msg.Msg exposing (Msg)
 import View.Roadmap.Generic as Generic
@@ -10,9 +11,22 @@ import View.Roadmap.Generic as Generic
 body : Html Msg
 body =
     Html.div
-        [ class "container"
+        [ class "container has-border-2 px-6 pb-6"
         ]
         [ Html.div
+            []
+            [ Html.div
+                [ class "mb-6"
+                ]
+                [ Html.a
+                    [ class "has-sky-blue-text is-family-secondary"
+                    , State.href <| State.Roadmap Lob.Total
+                    ]
+                    [ Html.text "Road Map"
+                    ]
+                ]
+            ]
+        , Html.div
             [ class "pb-6"
             ]
             [ Generic.view

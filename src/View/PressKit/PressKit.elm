@@ -11,9 +11,27 @@ import Msg.Msg exposing (Msg)
 body : Html Msg
 body =
     Html.div
-        [ class "container has-border-2 has-font-1"
+        [ class "container has-font-1"
         ]
-        [ Html.h2
+        [ Html.div
+            [ class "has-border-2 pb-6 px-3"
+            ]
+            [ Html.h2
+                [ class "is-family-secondary mb-3 ml-2"
+                ]
+                [ Html.text "Press Kit"
+                ]
+            , ep01
+            , lp01
+            ]
+        ]
+
+
+ep01 =
+    Html.div
+        [ class "has-border-3 pt-2 pb-6 mb-3"
+        ]
+        [ Html.h3
             [ class "has-border-1 mb-2 mx-2"
             ]
             [ Html.text "CDMX EP"
@@ -51,7 +69,7 @@ body =
                 ]
             ]
         , Html.div
-            [ class "mb-6 mx-2"
+            [ class "mb-2 mx-2"
             ]
             [ Html.a
                 [ class "has-sky-blue-text"
@@ -60,7 +78,14 @@ body =
                 [ Html.text "GALLERY"
                 ]
             ]
-        , Html.h2
+        ]
+
+
+lp01 =
+    Html.div
+        [ class "has-border-3 pt-2 pb-6 mb-3"
+        ]
+        [ Html.h3
             [ class "has-border-1 mb-2 mx-2"
             ]
             [ Html.text "SP LP"

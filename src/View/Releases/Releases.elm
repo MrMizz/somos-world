@@ -10,20 +10,24 @@ import Msg.Msg exposing (Msg)
 body : Html Msg
 body =
     Html.div
-        [ class "container has-font-1 has-border-3 pt-2 pb-6 px-3"
+        [ class "container has-font-1"
         ]
-        [ Html.h2
-            [ class "is-family-secondary mb-3"
+        [ Html.div
+            [ class "has-border-2 pb-6 px-3"
             ]
-            [ Html.text "Releases"
+            [ Html.h2
+                [ class "is-family-secondary mb-3 ml-2"
+                ]
+                [ Html.text "Releases"
+                ]
+            , ep01
             ]
-        , ep01
         ]
 
 
 ep01 =
     Html.div
-        [ class "has-border-3 py-2 px-2"
+        [ class "has-border-3 pt-2 pb-6 px-3"
         ]
         [ Html.h3
             [ class "has-border-1 mb-4"

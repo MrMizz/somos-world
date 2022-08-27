@@ -10,14 +10,15 @@ import View.Roadmap.Status as Status exposing (Status(..))
 view : Args -> Html Msg
 view args =
     Html.div
-        []
+        [ class "has-border-3 px-5 pt-2 pb-6"
+        ]
         [ Html.h2
             [ class "pb-3 has-opacity"
             ]
             [ Html.text args.title
             ]
         , Html.div
-            [ class "columns is-mobile has-border-3 has-font-1"
+            [ class "columns is-mobile has-font-1"
             ]
             [ Html.div
                 [ class "column is-4"
@@ -53,7 +54,7 @@ view args =
 li : Arg -> Html Msg
 li arg =
     Html.div
-        [ class "has-border-3 has-font-1 has-opacity mb-1"
+        [ class "has-border-3 has-font-1 has-opacity mb-1 px-1"
         ]
         [ arg.body
         ]

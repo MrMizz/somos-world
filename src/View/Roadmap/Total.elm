@@ -10,31 +10,39 @@ import Msg.Msg exposing (Msg)
 body : Html Msg
 body =
     Html.div
-        [ class "columns is-mobile is-multiline"
+        [ class "container has-font-1"
         ]
         [ Html.div
-            [ class "column is-12"
+            [ class "has-border-2 pb-6 px-3"
             ]
-            [ Html.a
-                [ State.href (Roadmap Music)
+            [ Html.h2
+                [ class "is-family-secondary mb-3 ml-2"
                 ]
-                [ Html.button
-                    [ class "is-button-2 has-font-1"
+                [ Html.text "Road Map"
+                ]
+            , Html.div
+                [ class "mb-2"
+                ]
+                [ Html.a
+                    [ State.href (Roadmap Music)
                     ]
-                    [ Html.text "MUSIC"
+                    [ Html.button
+                        [ class "is-button-2 has-font-1"
+                        ]
+                        [ Html.text "MUSIC"
+                        ]
                     ]
                 ]
-            ]
-        , Html.div
-            [ class "column is-12"
-            ]
-            [ Html.a
-                [ State.href (Roadmap Tech)
-                ]
-                [ Html.button
-                    [ class "is-button-2 has-font-1"
+            , Html.div
+                []
+                [ Html.a
+                    [ State.href (Roadmap Tech)
                     ]
-                    [ Html.text "TECH"
+                    [ Html.button
+                        [ class "is-button-2 has-font-1"
+                        ]
+                        [ Html.text "TECH"
+                        ]
                     ]
                 ]
             ]
