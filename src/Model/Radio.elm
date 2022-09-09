@@ -19,6 +19,7 @@ type Episode
     | Eight
     | Nine
     | Ten
+    | Eleven
 
 
 type alias Links =
@@ -43,6 +44,7 @@ episodes =
     , Eight
     , Nine
     , Ten
+    , Eleven
     ]
 
 
@@ -99,6 +101,11 @@ toLinks episode =
             , tidal = "https://tidal.com/browse/playlist/a9aec11e-9346-4c3e-810d-df286798608f"
             }
 
+        Eleven ->
+            { soundcloud = "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1340924608&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
+            , tidal = "https://tidal.com/browse/playlist/3e6f3b57-183a-4bac-b9da-8c4ca2308aba"
+            }
+
 
 toDescription : Episode -> String
 toDescription episode =
@@ -132,6 +139,9 @@ toDescription episode =
 
         Ten ->
             "Prince - For You (Full Album)"
+
+        Eleven ->
+            "Dego (Exclusive Hour)"
 
 
 toString : Episode -> String
@@ -167,6 +177,9 @@ toString episode =
         Ten ->
             "010"
 
+        Eleven ->
+            "011"
+
 
 fromString : String -> Maybe Radio
 fromString string =
@@ -200,6 +213,9 @@ fromString string =
 
         "010" ->
             Just <| Selected Ten
+
+        "011" ->
+            Just <| Selected Eleven
 
         _ ->
             Nothing
