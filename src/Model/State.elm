@@ -20,6 +20,7 @@ type State
     | Radio Radio.Radio
     | Alex
     | Audius
+    | Dap
       -- | Tickets
     | Error String
 
@@ -43,6 +44,7 @@ urlParser =
         , UrlParser.map (Description EP01) (UrlParser.s "description") </> UrlParser.s (Project.toString EP01)
         , UrlParser.map Alex (UrlParser.s "alex")
         , UrlParser.map Audius (UrlParser.s "alex") </> UrlParser.s "audius"
+        , UrlParser.map Dap (UrlParser.s "dap")
         ]
 
 
@@ -105,6 +107,9 @@ path state =
 
         Audius ->
             "#/alex/audius"
+
+        Dap ->
+            "#/dap"
 
         Error _ ->
             "#/invalid"
