@@ -26,6 +26,7 @@ type Episode
     | Fifteen
     | Sixteen
     | Seventeen
+    | Eighteen
 
 
 type alias Links =
@@ -40,7 +41,8 @@ type alias Description =
 
 episodes : List Episode
 episodes =
-    [ Seventeen
+    [ Eighteen
+    , Seventeen
     , Sixteen
     , Fifteen
     , Fourteen
@@ -148,6 +150,11 @@ toLinks episode =
             , tidal = "https://tidal.com/browse/playlist/8b6c8b89-7fe7-401c-b495-7212b0eb25ef"
             }
 
+        Eighteen ->
+            { soundcloud = "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1376709226&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
+            , tidal = "https://tidal.com/browse/playlist/1901ee8d-a608-4b68-8c36-8b7b226ba73b"
+            }
+
 
 toDescription : Episode -> String
 toDescription episode =
@@ -202,6 +209,9 @@ toDescription episode =
 
         Seventeen ->
             "Marvin Gaye (Exclusive Hour)"
+
+        Eighteen ->
+            "80s Luv"
 
 
 toString : Episode -> String
@@ -258,6 +268,9 @@ toString episode =
         Seventeen ->
             "017"
 
+        Eighteen ->
+            "018"
+
 
 fromString : String -> Maybe Radio
 fromString string =
@@ -312,6 +325,9 @@ fromString string =
 
         "017" ->
             Just <| Selected Seventeen
+
+        "018" ->
+            Just <| Selected Eighteen
 
         _ ->
             Nothing
