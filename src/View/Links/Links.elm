@@ -8,38 +8,53 @@ import Msg.Msg exposing (Msg)
 body : Html Msg
 body =
     Html.div
-        [ class "container has-text-centered has-font-1 has-border-2"
+        [ class "container has-text-centered has-font-1"
         ]
-        [ link
-            { title = "BANDCAMP_"
-            , url = "https://somos-ep.bandcamp.com"
-            , font = "fab fa-sm fa-bandcamp"
-            }
-        , link
-            { title = "SPOTIFY_"
-            , url = "https://open.spotify.com/artist/7taoh5iJntcYRipZKu4yAp?si=vuSsT_g4S3mKWeFeY7KZiw"
-            , font = "fab fa-sm fa-spotify"
-            }
-        , link
-            { title = "APPLE_MUSIC_"
-            , url = "https://music.apple.com/us/artist/somos/1592219045"
-            , font = "fab fa-sm fa-itunes"
-            }
-        , link
-            { title = "SOUND_CLOUD_"
-            , url = "https://soundcloud.com/somos-world"
-            , font = "fab fa-sm fa-soundcloud"
-            }
-        , link
-            { title = "YOUTUBE_"
-            , url = "https://www.youtube.com/channel/UCaAHeEOtcuOP_s9K8YKgTDw"
-            , font = "fab fa-sm fa-youtube"
-            }
-        , link
-            { title = "INSTAGRAM_"
-            , url = "https://www.instagram.com/somos.world/"
-            , font = "fab fa-sm fa-instagram"
-            }
+        [ Html.div
+            [ class "has-border-2 pb-6 mb-3"
+            ]
+            [ Html.a
+                [ class "has-sky-blue-text"
+                , href "https://link.dice.fm/pKgi2UbMGub"
+                , target "_blank"
+                ]
+                [ Html.text "🆒 click for tickets --> cassowary & friends 🆒"
+                ]
+            ]
+        , Html.div
+            [ class "has-border-2"
+            ]
+            [ link
+                { title = "BANDCAMP_"
+                , url = "https://somos-ep.bandcamp.com"
+                , font = "fab fa-sm fa-bandcamp"
+                }
+            , link
+                { title = "SPOTIFY_"
+                , url = "https://open.spotify.com/artist/7taoh5iJntcYRipZKu4yAp?si=vuSsT_g4S3mKWeFeY7KZiw"
+                , font = "fab fa-sm fa-spotify"
+                }
+            , link
+                { title = "APPLE_MUSIC_"
+                , url = "https://music.apple.com/us/artist/somos/1592219045"
+                , font = "fab fa-sm fa-itunes"
+                }
+            , link
+                { title = "SOUND_CLOUD_"
+                , url = "https://soundcloud.com/somos-world"
+                , font = "fab fa-sm fa-soundcloud"
+                }
+            , link
+                { title = "YOUTUBE_"
+                , url = "https://www.youtube.com/channel/UCaAHeEOtcuOP_s9K8YKgTDw"
+                , font = "fab fa-sm fa-youtube"
+                }
+            , link
+                { title = "INSTAGRAM_"
+                , url = "https://www.instagram.com/somos.world/"
+                , font = "fab fa-sm fa-instagram"
+                }
+            ]
         ]
 
 
