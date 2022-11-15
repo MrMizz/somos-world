@@ -21,8 +21,8 @@ body =
                 ]
                 [ Html.text "Press Kit"
                 ]
+            , tropical
             , ep01
-            , lp01
             ]
         ]
 
@@ -65,29 +65,51 @@ ep01 =
                 [ class "has-sky-blue-text"
                 , State.href (Gallery EP01)
                 ]
-                [ Html.text "GALLERY"
+                [ Html.text "VIEW PHOTO GALLERY"
                 ]
-            ]
-        ]
-
-
-lp01 =
-    Html.div
-        [ class "has-border-3 pt-2 pb-6 mb-3"
-        ]
-        [ Html.h3
-            [ class "has-border-1 mb-2 mx-2"
-            ]
-            [ Html.text "SP LP"
             ]
         , Html.div
             [ class "mb-2 mx-2"
             ]
             [ Html.a
                 [ class "has-sky-blue-text"
-                , State.href (Roadmap Music)
+                , href "images/ep/ep.zip"
+                , target "_blank"
                 ]
-                [ Html.text "WORK IN PROGRESS . . . "
+                [ Html.text "DOWNLOAD PHOTO GALLERY"
+                ]
+            ]
+        ]
+
+
+tropical =
+    Html.div
+        [ class "has-border-3 pt-2 pb-6 mb-3"
+        ]
+        [ Html.h3
+            [ class "has-border-1 mb-2 mx-2"
+            ]
+            [ Html.text "TROPICAL"
+            ]
+        , Html.div
+            [ class "mb-2 mx-2"
+            ]
+            [ Html.a
+                [ class "has-sky-blue-text"
+                , State.href (Gallery Tropical)
+                ]
+                [ Html.text "VIEW PHOTO GALLERY"
+                ]
+            ]
+        , Html.div
+            [ class "mb-2 mx-2"
+            ]
+            [ Html.a
+                [ class "has-sky-blue-text"
+                , href "images/tropical/tropical.zip"
+                , target "_blank"
+                ]
+                [ Html.text "DOWNLOAD PHOTO GALLERY"
                 ]
             ]
         ]

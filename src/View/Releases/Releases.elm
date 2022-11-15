@@ -59,6 +59,18 @@ tropical =
                 , url = "https://distrokid.com/hyperfollow/somosandmarinamarchi/tropical"
                 }
             ]
+        , Html.div
+            []
+            [ Html.a
+                [ State.href (Gallery Tropical)
+                ]
+                [ Html.button
+                    [ class "is-button-2"
+                    ]
+                    [ Html.text "📸 📸 📸"
+                    ]
+                ]
+            ]
         ]
 
 

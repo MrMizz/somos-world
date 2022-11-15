@@ -19,6 +19,7 @@ import View.Alex.Dap
 import View.Description.EP01
 import View.Error.Error
 import View.Gallery.EP01
+import View.Gallery.Tropical
 import View.Hero
 import View.Links.Links
 import View.PressKit.PressKit
@@ -102,7 +103,7 @@ view model =
                             hero (View.Error.Error.body "DNE")
 
                         Tropical ->
-                            hero (View.Error.Error.body "DNE")
+                            hero View.Gallery.Tropical.body
 
                 Description project ->
                     case project of

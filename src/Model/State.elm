@@ -39,6 +39,7 @@ urlParser =
         , UrlParser.map (Radio Top) (UrlParser.s "radio")
         , UrlParser.map Radio Radio.urlParser
         , UrlParser.map (Gallery EP01) (UrlParser.s "gallery") </> UrlParser.s (Project.toString EP01)
+        , UrlParser.map (Gallery Tropical) (UrlParser.s "gallery") </> UrlParser.s (Project.toString Tropical)
         , UrlParser.map (Description EP01) (UrlParser.s "description") </> UrlParser.s (Project.toString EP01)
         , UrlParser.map Alex (UrlParser.s "alex")
         , UrlParser.map Audius (UrlParser.s "alex") </> UrlParser.s "audius"
