@@ -11,17 +11,6 @@ body =
         [ class "container has-text-centered has-font-1"
         ]
         [ Html.div
-            [ class "has-border-2 pb-6 mb-3"
-            ]
-            [ Html.a
-                [ class "has-sky-blue-text"
-                , href "https://link.dice.fm/pKgi2UbMGub"
-                , target "_blank"
-                ]
-                [ Html.text "🆒 click for tickets --> cassowary & friends 🆒"
-                ]
-            ]
-        , Html.div
             [ class "has-border-2"
             ]
             [ link
