@@ -82,8 +82,8 @@ view model =
 
         html =
             case model.state of
-                Releases ->
-                    hero View.Releases.Releases.body
+                Releases project ->
+                    hero <| View.Releases.Releases.body project
 
                 About ->
                     hero View.About.About.body
@@ -93,6 +93,9 @@ view model =
 
                 Gallery project ->
                     case project of
+                        All ->
+                            hero (View.Error.Error.body "DNE")
+
                         EP01 ->
                             hero View.Gallery.EP01.body
 
@@ -101,6 +104,9 @@ view model =
 
                 Description project ->
                     case project of
+                        All ->
+                            hero (View.Error.Error.body "DNE")
+
                         EP01 ->
                             hero View.Description.EP01.body
 

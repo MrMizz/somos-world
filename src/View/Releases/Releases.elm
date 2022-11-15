@@ -7,8 +7,8 @@ import Model.State as State exposing (State(..))
 import Msg.Msg exposing (Msg)
 
 
-body : Html Msg
-body =
+body : Project -> Html Msg
+body project =
     Html.div
         [ class "container has-font-1"
         ]

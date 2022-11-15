@@ -3,6 +3,7 @@ module View.Roadmap.Music exposing (body)
 import Html exposing (Html)
 import Html.Attributes exposing (class, href, target)
 import Model.Lob as Lob
+import Model.Project as Project
 import Model.State as State exposing (State(..))
 import Msg.Msg exposing (Msg)
 import View.Roadmap.Generic as Generic
@@ -41,7 +42,7 @@ body =
                     [ { body =
                             Html.a
                                 [ class "has-sky-blue-text"
-                                , State.href Releases
+                                , State.href <| Releases Project.EP01
                                 ]
                                 [ Html.text "RELEASE"
                                 ]

@@ -10,7 +10,7 @@ import Url.Parser as UrlParser exposing ((</>))
 
 
 type State
-    = Releases
+    = Releases Project
     | About
     | Links
     | Gallery Project
@@ -29,9 +29,7 @@ urlParser : UrlParser.Parser (State -> c) c
 urlParser =
     UrlParser.oneOf
         [ UrlParser.map Links UrlParser.top
-
-        -- , UrlParser.map Tickets (UrlParser.s "tickets")
-        , UrlParser.map Releases (UrlParser.s "releases")
+        , UrlParser.map (Releases Project.All) (UrlParser.s "releases" </> UrlParser.s "discography")
         , UrlParser.map About (UrlParser.s "about")
         , UrlParser.map Links (UrlParser.s "links")
         , UrlParser.map PressKit (UrlParser.s "press-kit")
@@ -68,8 +66,12 @@ parse url =
 path : State -> String
 path state =
     case state of
-        Releases ->
-            "#/releases"
+        Releases project ->
+            String.concat
+                [ "#/releases"
+                , "/"
+                , Project.toString project
+                ]
 
         About ->
             "#/about"
@@ -78,10 +80,18 @@ path state =
             "#/links"
 
         Gallery project ->
-            "#/gallery/" ++ Project.toString project
+            String.concat
+                [ "#/gallery"
+                , "/"
+                , Project.toString project
+                ]
 
         Description project ->
-            "#/description/" ++ Project.toString project
+            String.concat
+                [ "#/description"
+                , "/"
+                , Project.toString project
+                ]
 
         Roadmap lob ->
             case lob of
@@ -100,7 +110,10 @@ path state =
                     "#/radio"
 
                 Selected episode ->
-                    String.concat [ "#/radio/", Radio.toString episode ]
+                    String.concat
+                        [ "#/radio/"
+                        , Radio.toString episode
+                        ]
 
         Alex ->
             "#/alex"

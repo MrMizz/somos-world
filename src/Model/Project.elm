@@ -2,13 +2,17 @@ module Model.Project exposing (Project(..), toString)
 
 
 type Project
-    = EP01
+    = All
+    | EP01
     | LP01
 
 
 toString : Project -> String
 toString project =
     case project of
+        All ->
+            "discography"
+
         EP01 ->
             "cdmx-ep"
 
