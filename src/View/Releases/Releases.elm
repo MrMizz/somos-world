@@ -7,8 +7,8 @@ import Model.State as State exposing (State(..))
 import Msg.Msg exposing (Msg)
 
 
-body : Project -> Html Msg
-body project =
+body : Html Msg
+body =
     Html.div
         [ class "container has-font-1"
         ]
@@ -20,7 +20,44 @@ body project =
                 ]
                 [ Html.text "Releases"
                 ]
-            , ep01
+            , Html.div
+                [ class "mb-5"
+                ]
+                [ tropical
+                ]
+            , Html.div
+                []
+                [ ep01
+                ]
+            ]
+        ]
+
+
+tropical =
+    Html.div
+        [ class "has-border-3 pt-2 pb-6 px-3"
+        ]
+        [ Html.h3
+            [ class "has-border-1 mb-4"
+            ]
+            [ Html.text "TROPICAL / 2022"
+            ]
+        , Html.h4
+            []
+            [ Html.text "PRE-SAVE"
+            ]
+        , Html.p
+            [ class "has-opacity mb-1"
+            ]
+            [ Html.text "DECEMBER 9th RELEASE DATE 💫"
+            ]
+        , Html.div
+            [ class "mb-3"
+            ]
+            [ link
+                { title = "distrokid"
+                , url = "https://distrokid.com/hyperfollow/somosandmarinamarchi/tropical"
+                }
             ]
         ]
 
@@ -34,7 +71,7 @@ ep01 =
             ]
             [ Html.text "CDMX_EP / 2021"
             ]
-        , Html.h2
+        , Html.h4
             []
             [ Html.text "PURCHASE"
             ]
@@ -51,7 +88,7 @@ ep01 =
                 , url = "https://somos-ep.bandcamp.com"
                 }
             ]
-        , Html.h2
+        , Html.h4
             []
             [ Html.text "STREAMING"
             ]
@@ -76,7 +113,7 @@ ep01 =
                 , url = "https://www.youtube.com/playlist?list=PLRe_JtAR_iVWIXOmHEMxZh6AZt_4cGDvV"
                 }
             ]
-        , Html.h2
+        , Html.h4
             []
             [ Html.text "ET CETERA"
             ]

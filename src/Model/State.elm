@@ -10,7 +10,7 @@ import Url.Parser as UrlParser exposing ((</>))
 
 
 type State
-    = Releases Project
+    = Releases
     | About
     | Links
     | Gallery Project
@@ -29,9 +29,7 @@ urlParser : UrlParser.Parser (State -> c) c
 urlParser =
     UrlParser.oneOf
         [ UrlParser.map Links UrlParser.top
-        , UrlParser.map (Releases Project.All) (UrlParser.s "releases" </> UrlParser.s "discography")
-        , UrlParser.map (Releases Project.EP01) (UrlParser.s "releases" </> UrlParser.s "cdmx-ep")
-        , UrlParser.map (Releases Project.LP01) (UrlParser.s "releases" </> UrlParser.s "sp-lp")
+        , UrlParser.map Releases (UrlParser.s "releases")
         , UrlParser.map About (UrlParser.s "about")
         , UrlParser.map Links (UrlParser.s "links")
         , UrlParser.map PressKit (UrlParser.s "press-kit")
@@ -68,12 +66,8 @@ parse url =
 path : State -> String
 path state =
     case state of
-        Releases project ->
-            String.concat
-                [ "#/releases"
-                , "/"
-                , Project.toString project
-                ]
+        Releases ->
+            "#/releases"
 
         About ->
             "#/about"

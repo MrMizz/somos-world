@@ -2,7 +2,6 @@ module View.Gallery.EP01 exposing (body)
 
 import Html exposing (Html)
 import Html.Attributes exposing (class, src)
-import Model.Project as Project
 import Model.State as State
 import Msg.Msg exposing (Msg)
 
@@ -17,10 +16,13 @@ body =
             ]
             [ Html.a
                 [ class "has-sky-blue-text"
-                , State.href <| State.Releases Project.EP01
+                , State.href <| State.Releases
                 ]
-                [ Html.text "CDMX EP"
+                [ Html.text "DISCOGRAPHY"
                 ]
+            , Html.text <|
+                """ / CDMX EP
+                """
             ]
         , Html.div
             [ class "columns is-mobile is-multiline"

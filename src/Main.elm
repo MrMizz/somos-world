@@ -27,7 +27,6 @@ import View.Releases.Releases
 import View.Roadmap.Music
 import View.Roadmap.Tech
 import View.Roadmap.Total
-import View.Tickets.Tickets
 
 
 main : Program () Model Msg
@@ -82,8 +81,8 @@ view model =
 
         html =
             case model.state of
-                Releases project ->
-                    hero <| View.Releases.Releases.body project
+                Releases ->
+                    hero <| View.Releases.Releases.body
 
                 About ->
                     hero View.About.About.body
@@ -102,6 +101,9 @@ view model =
                         LP01 ->
                             hero (View.Error.Error.body "DNE")
 
+                        Tropical ->
+                            hero (View.Error.Error.body "DNE")
+
                 Description project ->
                     case project of
                         All ->
@@ -111,6 +113,9 @@ view model =
                             hero View.Description.EP01.body
 
                         LP01 ->
+                            hero (View.Error.Error.body "DNE")
+
+                        Tropical ->
                             hero (View.Error.Error.body "DNE")
 
                 Roadmap lob ->

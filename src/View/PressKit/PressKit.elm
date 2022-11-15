@@ -3,7 +3,7 @@ module View.PressKit.PressKit exposing (body)
 import Html exposing (Html)
 import Html.Attributes exposing (class, href, target)
 import Model.Lob exposing (Lob(..))
-import Model.Project as Project exposing (Project(..))
+import Model.Project exposing (Project(..))
 import Model.State as State exposing (State(..))
 import Msg.Msg exposing (Msg)
 
@@ -35,16 +35,6 @@ ep01 =
             [ class "has-border-1 mb-2 mx-2"
             ]
             [ Html.text "CDMX EP"
-            ]
-        , Html.div
-            [ class "mb-2 mx-2"
-            ]
-            [ Html.a
-                [ class "has-sky-blue-text"
-                , State.href <| Releases Project.EP01
-                ]
-                [ Html.text "EP RELEASE"
-                ]
             ]
         , Html.div
             [ class "mb-2 mx-2"

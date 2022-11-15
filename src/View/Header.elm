@@ -3,7 +3,6 @@ module View.Header exposing (view)
 import Html exposing (Html)
 import Html.Attributes exposing (class, src, style, width)
 import Model.Model exposing (Model)
-import Model.Project as Project
 import Model.Radio as Radio
 import Model.State as State exposing (State(..))
 import Msg.Msg exposing (Msg)
@@ -24,7 +23,7 @@ view model =
             , title = "ABOUT"
             }
         , tab_
-            { state = Releases Project.All
+            { state = Releases
             , title = "RELEASES"
             }
         , tab_
@@ -111,20 +110,10 @@ isActive model state =
                     ""
 
         Gallery _ ->
-            case state of
-                Releases _ ->
-                    class_
-
-                _ ->
-                    ""
+            f (state == Releases)
 
         Description _ ->
-            case state of
-                Releases _ ->
-                    class_
-
-                _ ->
-                    ""
+            f (state == Releases)
 
         modelState ->
             f (modelState == state)

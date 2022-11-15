@@ -2,7 +2,6 @@ module View.Description.EP01 exposing (body)
 
 import Html exposing (Html)
 import Html.Attributes exposing (class)
-import Model.Project as Project
 import Model.State as State
 import Msg.Msg exposing (Msg)
 
@@ -15,14 +14,17 @@ body =
         [ Html.p
             []
             [ Html.div
-                [ class "has-border-1"
+                [ class "has-border-1 is-family-secondary"
                 ]
                 [ Html.a
-                    [ class "has-sky-blue-text is-family-secondary"
-                    , State.href <| State.Releases Project.EP01
+                    [ class "has-sky-blue-text"
+                    , State.href <| State.Releases
                     ]
-                    [ Html.text "CDMX EP"
+                    [ Html.text "DISCOGRAPHY"
                     ]
+                , Html.text <|
+                    """ / CDMX EP
+                    """
                 ]
             , Html.div
                 [ class "mt-3 has-opacity"

@@ -42,7 +42,7 @@ body =
                     [ { body =
                             Html.a
                                 [ class "has-sky-blue-text"
-                                , State.href <| Releases Project.EP01
+                                , State.href <| Releases
                                 ]
                                 [ Html.text "RELEASE"
                                 ]
