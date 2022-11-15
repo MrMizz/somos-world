@@ -33,10 +33,6 @@ view model =
             , title = "LINKS"
             }
         , tab_
-            { state = Roadmap Total
-            , title = "ROAD_MAP"
-            }
-        , tab_
             { state = PressKit
             , title = "PRESS_KIT"
             }
@@ -44,20 +40,6 @@ view model =
             { state = Radio Radio.Top
             , title = "RADIO"
             }
-        , Html.div
-            [ style "float" "left"
-            ]
-            [ Html.a
-                [ href "https://store.somos.world/"
-                , target "_blank"
-                ]
-                [ Html.button
-                    [ class (String.join " " [ "has-font-1", "is-button-1" ])
-                    ]
-                    [ Html.text "STORE"
-                    ]
-                ]
-            ]
         , Html.div
             [ style "float" "right"
             ]
