@@ -1,8 +1,7 @@
 module View.Header exposing (view)
 
 import Html exposing (Html)
-import Html.Attributes exposing (class, href, src, style, target, width)
-import Model.Lob exposing (Lob(..))
+import Html.Attributes exposing (class, src, style, width)
 import Model.Model exposing (Model)
 import Model.Project as Project
 import Model.Radio as Radio

@@ -30,6 +30,8 @@ urlParser =
     UrlParser.oneOf
         [ UrlParser.map Links UrlParser.top
         , UrlParser.map (Releases Project.All) (UrlParser.s "releases" </> UrlParser.s "discography")
+        , UrlParser.map (Releases Project.EP01) (UrlParser.s "releases" </> UrlParser.s "cdmx-ep")
+        , UrlParser.map (Releases Project.LP01) (UrlParser.s "releases" </> UrlParser.s "sp-lp")
         , UrlParser.map About (UrlParser.s "about")
         , UrlParser.map Links (UrlParser.s "links")
         , UrlParser.map PressKit (UrlParser.s "press-kit")
