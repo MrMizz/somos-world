@@ -241,7 +241,7 @@ toDescription episode =
             "Brasilidades / MPB"
 
         TwentyOne ->
-            "Brasilidades / MPB"
+            "Brasilidades / MPB (de novo)"
 
 
 toString : Episode -> String
