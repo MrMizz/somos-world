@@ -66,10 +66,6 @@ tropical =
                 { title = "tidal_"
                 , url = "https://tidal.com/browse/album/257935248"
                 }
-            , link
-                { title = "youtube_"
-                , url = "https://www.youtube.com/watch?v=yAvaUqg2pbI"
-                }
             ]
         , Html.div
             []
