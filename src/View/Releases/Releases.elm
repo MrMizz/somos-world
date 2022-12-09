@@ -44,19 +44,31 @@ tropical =
             ]
         , Html.h4
             []
-            [ Html.text "PRE-SAVE"
+            [ Html.text "STREAMING"
             ]
         , Html.p
             [ class "has-opacity mb-1"
             ]
-            [ Html.text "DECEMBER 9th RELEASE DATE 💫"
+            [ Html.text "SELECT PLATFORM"
             ]
         , Html.div
-            [ class "mb-3"
+            [ class "field is-grouped mb-3"
             ]
             [ link
-                { title = "distrokid"
-                , url = "https://distrokid.com/hyperfollow/somosandmarinamarchi/tropical"
+                { title = "spotify_"
+                , url = "https://open.spotify.com/track/3NI0VZyoAmXDRFKW6wbxyC?si=adda6c9883de41c8"
+                }
+            , link
+                { title = "apple_music_"
+                , url = "https://music.apple.com/us/album/tropical/1652606596?i=1652606597"
+                }
+            , link
+                { title = "tidal_"
+                , url = "https://tidal.com/browse/album/257935248"
+                }
+            , link
+                { title = "youtube_"
+                , url = "https://www.youtube.com/watch?v=yAvaUqg2pbI"
                 }
             ]
         , Html.div
