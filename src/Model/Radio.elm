@@ -32,6 +32,7 @@ type Episode
     | TwentyOne
     | TwentyTwo
     | TwentyThree
+    | TwentyFour
 
 
 type alias Links =
@@ -46,7 +47,8 @@ type alias Description =
 
 episodes : List Episode
 episodes =
-    [ TwentyThree
+    [ TwentyFour
+    , TwentyThree
     , TwentyTwo
     , TwentyOne
     , Twenty
@@ -190,6 +192,11 @@ toLinks episode =
             , tidal = "https://tidal.com/browse/playlist/28679a32-47d9-4aa4-ab21-fb79c93f8bc5"
             }
 
+        TwentyFour ->
+            { soundcloud = "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1418412325&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
+            , tidal = "https://tidal.com/browse/playlist/687ab44f-c8fe-4ce8-8601-b325e24896a6"
+            }
+
 
 toDescription : Episode -> String
 toDescription episode =
@@ -262,6 +269,9 @@ toDescription episode =
 
         TwentyThree ->
             "Jazz Fusion / Soft Sounds"
+
+        TwentyFour ->
+            "Contemporary Boogie"
 
 
 toString : Episode -> String
@@ -336,6 +346,9 @@ toString episode =
         TwentyThree ->
             "023"
 
+        TwentyFour ->
+            "024"
+
 
 fromString : String -> Maybe Radio
 fromString string =
@@ -408,6 +421,9 @@ fromString string =
 
         "023" ->
             Just <| Selected TwentyThree
+
+        "024" ->
+            Just <| Selected TwentyFour
 
         _ ->
             Nothing
