@@ -105,6 +105,9 @@ view model =
                         Tropical ->
                             hero View.Gallery.Tropical.body
 
+                        Paraiso ->
+                            hero (View.Error.Error.body "DNE")
+
                 Description project ->
                     case project of
                         All ->
@@ -117,6 +120,9 @@ view model =
                             hero (View.Error.Error.body "DNE")
 
                         Tropical ->
+                            hero (View.Error.Error.body "DNE")
+
+                        Paraiso ->
                             hero (View.Error.Error.body "DNE")
 
                 Roadmap lob ->

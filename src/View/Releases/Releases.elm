@@ -23,12 +23,54 @@ body =
             , Html.div
                 [ class "mb-5"
                 ]
+                [ paraiso
+                ]
+            , Html.div
+                [ class "mb-5"
+                ]
                 [ tropical
                 ]
             , Html.div
                 []
                 [ ep01
                 ]
+            ]
+        ]
+
+
+paraiso =
+    Html.div
+        [ class "has-border-3 pt-2 pb-6 px-3"
+        ]
+        [ Html.h3
+            [ class "has-border-1 mb-4"
+            ]
+            [ Html.text "PARAÍSO / 2023"
+            ]
+        , Html.h4
+            []
+            [ Html.text "STREAMING"
+            ]
+        , Html.p
+            [ class "has-opacity mb-1"
+            ]
+            [ Html.text "SELECT PLATFORM"
+            ]
+        , Html.div
+            [ class "field is-grouped mb-3"
+            ]
+            [ link
+                { title = "spotify_"
+                , url = "https://open.spotify.com/track/2JbsjZqb7vpITf0XOXzawg?si=88328677858740b2"
+                }
+            , link
+                { title = "apple_music_"
+                , url = "https://music.apple.com/us/album/para%C3%ADso-single/1660335889"
+                }
+            , link
+                { title = "tidal_"
+                , url = "https://tidal.com/browse/track/267241542"
+                }
             ]
         ]
 

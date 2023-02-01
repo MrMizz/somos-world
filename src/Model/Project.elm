@@ -6,6 +6,7 @@ type Project
     | EP01
     | LP01
     | Tropical
+    | Paraiso
 
 
 toString : Project -> String
@@ -22,3 +23,6 @@ toString project =
 
         Tropical ->
             "tropical"
+
+        Paraiso ->
+            "paraiso"
