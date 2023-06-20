@@ -23,16 +23,8 @@ view model =
             , title = "ABOUT"
             }
         , tab_
-            { state = Releases
-            , title = "RELEASES"
-            }
-        , tab_
             { state = Links
             , title = "LINKS"
-            }
-        , tab_
-            { state = PressKit
-            , title = "PRESS_KIT"
             }
         , tab_
             { state = Radio Radio.Top
