@@ -72,6 +72,26 @@ episode_ arg =
     let
         links =
             Radio.toLinks arg
+
+        spotify =
+            case links.spotify of
+                Just link ->
+                    Html.div
+                        [ class "pb-1"
+                        ]
+                        [ Html.a
+                            [ Html.Attributes.href link
+                            , class "has-sky-blue-text"
+                            , target "_blank"
+                            ]
+                            [ Html.text "View all the Track IDs on Spotify"
+                            ]
+                        ]
+
+                Nothing ->
+                    Html.div
+                        []
+                        []
     in
     Html.div
         [ class "has-border-3 pt-2 pb-6 px-3"
@@ -122,4 +142,5 @@ episode_ arg =
                 [ Html.text "View all the Track IDs on Tidal"
                 ]
             ]
+        , spotify
         ]
