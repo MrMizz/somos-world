@@ -455,9 +455,6 @@ toString episode =
         TwentyNine ->
             "029"
 
-        Thirty ->
-            "030"
-
 
 fromString : String -> Maybe Radio
 fromString string =
@@ -548,9 +545,6 @@ fromString string =
 
         "029" ->
             Just <| Selected TwentyNine
-
-        "030" ->
-            Just <| Selected Thirty
 
         _ ->
             Nothing
