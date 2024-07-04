@@ -31,7 +31,7 @@ view =
             [ class "level-item"
             ]
             [ Html.a
-                [ href "https://github.com/MrMizz/somos-world"
+                [ href "https://github.com/mrmizz/somos-world"
                 , target "_blank"
                 ]
                 [ Html.span

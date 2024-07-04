@@ -1,7 +1,7 @@
 module View.Header exposing (view)
 
 import Html exposing (Html)
-import Html.Attributes exposing (class, src, style, width)
+import Html.Attributes exposing (class, style)
 import Model.Model exposing (Model)
 import Model.Radio as Radio
 import Model.State as State exposing (State(..))
@@ -30,19 +30,6 @@ view model =
             { state = Radio Radio.Top
             , title = "RADIO"
             }
-        , Html.div
-            [ style "float" "right"
-            ]
-            [ Html.a
-                [ State.href Links
-                ]
-                [ Html.img
-                    [ src "images/logo/02_somos.png"
-                    , width 50
-                    ]
-                    []
-                ]
-            ]
         ]
 
 
